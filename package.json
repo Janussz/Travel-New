@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "sass sass/main.scss css/style.css",
-    "compile": "sass sass/main.scss css/style.css -w",
+    "start": "sass sass/main.scss css/style.css -w",
+    "compile": "sass sass/main.scss css/style.css ",
     "prefix": "npx postcss css/style.css --use autoprefixer -o css/style.css",
     "minify": "cleancss -o css/style.css css/style.css",
     "build": "npm-run-all prefix minify compile"
