@@ -1,81 +1,65 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-h1 {
-  font-family: "Volkhov";
-  font-size: 84px;
-  line-height: 89px;
-  font-weight: 700;
-  color: #000;
-}
-
 @font-face {
-  font-family: "OpenSans";
+  font-family: $font-primary;
   font-style: normal;
   font-weight: 300;
   font-display: swap;
   src: url(./../fonts/OpenSans-Light.ttf);
+
 }
+
 @font-face {
-  font-family: "OpenSans";
+  font-family: $font-primary;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url(./../../fonts/OpenSans-Regular.ttf);
 }
+
 @font-face {
-  font-family: "OpenSans";
+  font-family: $font-primary;
   font-style: normal;
   font-weight: 500;
   font-display: swap;
   src: url(./../../fonts/OpenSans-Medium.ttf);
 }
+
 @font-face {
-  font-family: "OpenSans";
+  font-family: $font-primary;
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url(./../../fonts/OpenSans-Bold.ttf);
 }
+
 @font-face {
-  font-family: "Poppins";
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url(./../../fonts/Poppins-Regular.ttf);
 }
+
 @font-face {
-  font-family: "Poppins";
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 500;
   font-display: swap;
   src: url(./../../fonts/Poppins-Medium.ttf);
 }
+
 @font-face {
-  font-family: "Poppins";
+  font-family: $font-secondary;
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url(./../../fonts/Poppins-Bold.ttf);
 }
+
+
 @font-face {
-  font-family: "Volkhov";
+  font-family: $font-tertiary;
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url(./../../fonts/Volkhov-Bold.ttf);
 }
-
-/*# sourceMappingURL=style.css.map */
