@@ -1,0 +1,213 @@
+.subscribe {
+  margin-top: 5rem;
+
+  &__background {
+    position: relative;
+    max-width: 125rem;
+    padding-top: 7rem;
+    background-image: url(./../img/subscribe/Rectangle\ 164.svg);
+    background-repeat: no-repeat;
+  }
+
+  &__circles-left {
+
+    position: absolute;
+    top: 11rem;
+    left: -9rem;
+    z-index: -1;
+  }
+
+  &__circles-right {
+    display: none;
+    position: absolute;
+    top: 0rem;
+    right: 8rem;
+    z-index: -1;
+  }
+
+  &__mail-icon {
+    position: absolute;
+    max-width: 15%;
+    top: -1rem;
+    right: 2rem;
+  }
+
+  &__stars {
+    display: none;
+    position: absolute;
+    bottom: -3rem;
+    right: -4%;
+  }
+
+  &__info {
+    @include flex(column, space-between, center);
+
+    &__text {
+      padding: 0 1rem;
+      max-width: 86rem;
+      text-align: center;
+    }
+
+    &__input {
+      position: relative;
+      @include flex(column, center, center);
+      margin-top: 6rem;
+
+      .input_s {
+        width: 25rem;
+        height: 3.8rem;
+        background: $col-white;
+        padding: 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .input_s::placeholder {
+        padding-left: 4rem;
+        color: $col-text-600;
+      }
+
+      .label {
+        position: absolute;
+        top: 1.2rem;
+        left: 1rem;
+        cursor: text;
+
+        img {
+          color: $col-text-600;
+          width: 40%;
+        }
+      }
+
+      .input_s:not(:placeholder-shown)+.label {
+        opacity: 0;
+      }
+
+      .input_s:focus {
+        outline: none;
+      }
+
+      .subscribe__btn {
+        margin-top: 4rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .subscribe {
+    &__background {
+      padding: 9rem 1rem;
+    }
+
+    &__circles-left {
+      top: 4rem;
+      left: -9rem;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .subscribe {
+    &__background {
+      padding: 10rem 1rem;
+    }
+
+    &__circles-left {
+      top: 4rem;
+      left: -9rem;
+    }
+
+    &__info {
+      &__input {
+        .input_s {
+          width: 35rem;
+          height: 4.8rem;
+        }
+      }
+
+      .label {
+        top: 1.7rem;
+        left: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .subscribe {
+    .p_subscribe {
+      font-size: 33px;
+      line-height: 54px;
+    }
+
+
+    &__background {
+      padding: 10rem 1rem;
+    }
+
+    &__mail-icon {
+      top: -1rem;
+      right: -3rem;
+    }
+
+    &__circles-left {
+      top: 4rem;
+      left: -9rem;
+    }
+
+    &__circles-right {
+      display: block;
+      top: 0rem;
+      right: 0rem;
+    }
+
+    &__stars {
+      display: inline-block;
+    }
+
+    &__info {
+      &__input {
+        width: 62.5rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .input_s {
+          font-size: 1.7rem;
+          border-radius: 1rem;
+          width: 42rem;
+          height: 6.8rem;
+        }
+
+        .subscribe__btn {
+          margin-top: 0;
+        }
+      }
+
+      .label {
+        top: 2.7rem;
+        left: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .subscribe {
+    &__mail-icon {
+      right: 3rem;
+    }
+
+    &__circles-right {
+      display: block;
+      top: 0rem;
+      right: 6rem;
+    }
+
+    // &__stars {
+    //   right: -4rem;
+    // }
+  }
+}

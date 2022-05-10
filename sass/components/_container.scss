@@ -1,0 +1,16 @@
+.container {
+  position: relative;
+  max-width: 122.8rem;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    margin: 0 5.8rem 0 6.4rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    margin: 0 5.8rem 0 15.4rem;
+  }
+}
