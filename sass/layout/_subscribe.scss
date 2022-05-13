@@ -10,7 +10,6 @@
   }
 
   &__circles-left {
-
     position: absolute;
     top: 11rem;
     left: -9rem;
@@ -27,7 +26,7 @@
 
   &__mail-icon {
     position: absolute;
-    max-width: 15%;
+    max-width: 7rem;
     top: -1rem;
     right: 2rem;
   }
@@ -36,7 +35,7 @@
     display: none;
     position: absolute;
     bottom: -3rem;
-    right: -4%;
+    right: -7rem;
   }
 
   &__info {
@@ -48,49 +47,8 @@
       text-align: center;
     }
 
-    &__input {
-      position: relative;
-      @include flex(column, center, center);
-      margin-top: 6rem;
-
-      .input_s {
-        width: 25rem;
-        height: 3.8rem;
-        background: $col-white;
-        padding: 1rem;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-
-      .input_s::placeholder {
-        padding-left: 4rem;
-        color: $col-text-600;
-      }
-
-      .label {
-        position: absolute;
-        top: 1.2rem;
-        left: 1rem;
-        cursor: text;
-
-        img {
-          color: $col-text-600;
-          width: 40%;
-        }
-      }
-
-      .input_s:not(:placeholder-shown)+.label {
-        opacity: 0;
-      }
-
-      .input_s:focus {
-        outline: none;
-      }
-
-      .subscribe__btn {
-        margin-top: 4rem;
-      }
+    .btn__tertiary {
+      margin-top: 4rem;
     }
   }
 }
@@ -104,6 +62,15 @@
     &__circles-left {
       top: 4rem;
       left: -9rem;
+    }
+
+    &__info {
+      &__input {
+        .input__contact {
+          width: 30rem;
+
+        }
+      }
     }
   }
 }
@@ -121,9 +88,9 @@
 
     &__info {
       &__input {
-        .input_s {
-          width: 35rem;
-          height: 4.8rem;
+        .input__contact {
+          width: 40rem;
+
         }
       }
 
@@ -141,7 +108,6 @@
       font-size: 33px;
       line-height: 54px;
     }
-
 
     &__background {
       padding: 10rem 1rem;
@@ -164,24 +130,22 @@
     }
 
     &__stars {
-      display: inline-block;
+      display: block;
     }
 
     &__info {
       &__input {
-        width: 62.5rem;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
 
-        .input_s {
+        .input__contact {
           font-size: 1.7rem;
           border-radius: 1rem;
-          width: 42rem;
-          height: 6.8rem;
+          width: 45rem;
         }
 
-        .subscribe__btn {
+        .btn__tertiary {
           margin-top: 0;
         }
       }
@@ -194,20 +158,16 @@
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
   .subscribe {
     &__mail-icon {
-      right: 3rem;
+      right: -1rem;
     }
 
     &__circles-right {
       display: block;
       top: 0rem;
-      right: 6rem;
+      right: 2rem;
     }
-
-    // &__stars {
-    //   right: -4rem;
-    // }
   }
 }
