@@ -1,5 +1,5 @@
 h1 {
-  @include font(84px, 89px, 700, $col-black, $font-tertiary);
+  @include font(84px, 89px, 700, $col-text-900, $font-tertiary);
 }
 
 h2 {
@@ -44,5 +44,13 @@ h5 {
 }
 
 .p_foot_copyright {
-  @include font(12px, 16px, 500, $col-text-500, $font-secondary)
+  @include font(12px, 16px, 500, $col-text-500, $font-secondary);
+}
+
+.p-header-heading {
+  @include font(20px, 30px, 700, $col-orange-500, $font-secondary);
+}
+
+.p-header-description {
+  @include font(20px, 30px, 500, $col-text-500, $font-secondary);
 }
