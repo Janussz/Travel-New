@@ -54,3 +54,11 @@ h5 {
 .p-header-description {
   @include font(20px, 30px, 500, $col-text-500, $font-secondary);
 }
+
+.p-header-nav {
+  @include font(17px, 22px, 400, $col-nav-900, $font-secondary);
+}
+
+.btn-play-text {
+  @include font(17px, 22px, 400, $col-nav-500, $font-secondary);
+}

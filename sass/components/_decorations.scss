@@ -1,0 +1,12 @@
+.header-bg {
+    background-image: url('./../../img/header/Decore.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+}
+
+@media screen and (min-width: 700px) {
+    .header-bg {
+    background-size: auto;
+    }
+}
