@@ -1,0 +1,4 @@
+.container__title {
+    @include font(4rem, 4.45rem, 500, $col-text-800, $font-tertiary);
+    max-width: 500px;
+}

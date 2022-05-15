@@ -1,3 +1,11 @@
 h1 {
   @include font(84px, 89px, 700, $col-black, $font-tertiary);
 }
+
+.cn__nm {
+  @include font(16px, 20px, 700, $col-text-500, $font-secondary);
+}
+
+.cn__desc {
+  @include font(16px, 20px, 400, $col-text-500, $font-secondary);
+}

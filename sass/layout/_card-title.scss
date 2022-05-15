@@ -1,0 +1,3 @@
+.card__name {
+    @include font(18px, 22px, 500, $col-black, $font-secondary);
+}

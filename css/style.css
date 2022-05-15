@@ -1,3 +1,13 @@
+.card__glow {
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+.card__glow::after {
+  content: "";
+  display: block;
+  z-index: -1;
+  box-shadow: 34px -24px 100px -38px rgb(89, 177, 230);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,6 +29,22 @@ h1 {
   line-height: 89px;
   font-weight: 700;
   color: #000;
+}
+
+.cn__nm {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #5E6282;
+}
+
+.cn__desc {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #5E6282;
 }
 
 @font-face {
@@ -76,6 +102,208 @@ h1 {
   font-weight: 700;
   font-display: swap;
   src: url(./../../fonts/Volkhov-Bold.ttf);
+}
+.middle__container {
+  box-sizing: border-box;
+  padding: 1rem;
+}
+.middle__container .container__title {
+  margin: 1.5rem 0 3rem 0;
+}
+.middle__container .container__steps .step {
+  margin-bottom: 4.8rem;
+}
+.middle__container .card {
+  padding: 2rem;
+  position: absolute;
+}
+.middle__container .card .card__name {
+  padding: 2.6rem 0 1.3rem 0;
+}
+.middle__container .card .card__buttons {
+  padding: 2.1rem 0 3rem 0;
+}
+.middle__container .card .card__buttons .btn__card {
+  padding-right: 1.5rem;
+}
+.middle__container .card .card__info {
+  padding-bottom: 3rem;
+}
+.middle__container .card .card__info .card__summary {
+  padding-left: 1.5rem;
+}
+.middle__container .card__small {
+  padding: 2rem;
+  z-index: 2;
+  top: 40rem;
+  left: 2rem;
+  position: relative;
+  padding-bottom: 3rem;
+}
+.middle__container .card__small .trip__card {
+  padding-left: 1.2rem;
+}
+.middle__container .card__small .trip__card .card__name {
+  padding: 0.6rem 0 1.4rem 0;
+}
+.middle__container .card__small .trip__card .trip__completition {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.middle__container .card__small .trip__card .trip__completition .text__black {
+  color: #000;
+}
+.middle__container .card__small .trip__card .trip__completition .text__blue {
+  color: #8A79DF;
+  padding-right: 0.3rem;
+}
+
+.fl-r {
+  margin-left: auto;
+}
+
+@media (min-width: 1024px) {
+  .middle__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10rem;
+  }
+  .middle__container .card {
+    left: 55rem;
+    top: 8rem;
+  }
+  .middle__container .card__small {
+    top: -12rem;
+    left: 62rem;
+  }
+}
+@media (min-width: 1400px) {
+  .middle__container {
+    margin-left: 15rem;
+  }
+  .middle__container .card {
+    left: 70rem;
+  }
+  .middle__container .card__small {
+    top: -22.5rem;
+    left: 73rem;
+  }
+}
+.container__steps {
+  max-width: 39.5rem;
+}
+
+.container__name {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 600;
+  color: #5E6282;
+}
+
+.container__title {
+  font-family: "Volkhov";
+  font-size: 4rem;
+  line-height: 4.45rem;
+  font-weight: 500;
+  color: #14183E;
+  max-width: 500px;
+}
+
+.step {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin: 2.4rem 0;
+}
+
+.icon {
+  max-width: 48px;
+}
+
+.step__content {
+  padding-left: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  padding: 2rem 2.5rem;
+  max-width: 37rem;
+  max-height: 40rem;
+  border-radius: 2.6rem;
+}
+
+.card__name {
+  font-family: "Poppins";
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #000;
+}
+
+.card__small {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 1.8rem;
+  max-width: 26.3rem;
+  filter: box-shadow(0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+}
+
+.card__summary {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #84829A;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 100%;
+}
+
+.card__front {
+  z-index: 1;
+}
+
+.card__front:hover {
+  z-index: 10;
+}
+
+.trip__title {
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #84829A;
+}
+
+.line {
+  width: 160px;
+  border: 2px solid black;
+  opacity: 30%;
+  border-radius: 5px;
+}
+.line__blue {
+  width: 30%;
+  position: absolute;
+  top: 10.2rem;
+  opacity: 100%;
+  border: 2px solid #8A79DF;
 }
 
 /*# sourceMappingURL=style.css.map */
