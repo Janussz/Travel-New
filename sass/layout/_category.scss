@@ -1,8 +1,5 @@
 .category {
-  margin: 0 auto;
-
   &__description {
-
     @include flex(row, space-between, center);
     margin: 0 auto;
 
@@ -14,18 +11,24 @@
     &__header {
       margin-top: 1rem;
     }
-  }
 
-  &__description__stars {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 1%;
+    &__stars {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: -1rem;
+    }
   }
 
   &__services {
     &__list {
       @include flex(column, center, center);
+
+      &__item {
+        img {
+          width: 130px;
+        }
+      }
     }
   }
 }

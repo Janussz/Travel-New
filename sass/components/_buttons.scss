@@ -1,28 +1,21 @@
-.subscribe__btn {
+.btn__tertiary {
   @include font(10px, 16px, 600, $col-white, $font-primary);
-  width: 9rem;
-  height: 3.8rem;
-  background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
-  border-radius: 5px;
+  max-width: 18rem;
+  padding: 2rem 4rem;
+  background: linear-gradient(180deg, $col-orange-300 0%, $col-orange-400 100%);
+  border-radius: 10px;
   border: none;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  cursor: pointer;
 }
 
-@media screen and (min-width: 600px) {
-  .subscribe__btn {
-    font-size: 12px;
-    border-radius: 0.8rem;
-    width: 11rem;
-    height: 4.8rem;
-  }
-}
 
 @media screen and (min-width: 900px) {
-  .subscribe__btn {
+  .btn__tertiary {
     font-size: 1.7rem;
     line-height: 2.3rem;
-    border-radius: 1rem;
-    width: 18rem;
-    height: 6.8rem;
+    padding: 2rem 5rem;
   }
 }
 

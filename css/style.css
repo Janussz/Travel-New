@@ -8,13 +8,13 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "OpenSans", sans-serif;
+}
+
 img {
   max-width: 100%;
   height: auto;
-}
-
-body {
-  font-family: "OpenSans", sans-serif;
 }
 
 ul {
@@ -204,34 +204,27 @@ h5 {
   font-display: swap;
   src: url(./../../fonts/Volkhov-Bold.ttf);
 }
-.subscribe__btn {
+.btn__tertiary {
   font-family: "OpenSans";
   font-size: 10px;
   line-height: 16px;
   font-weight: 600;
   color: #fff;
-  width: 9rem;
-  height: 3.8rem;
+  max-width: 18rem;
+  padding: 2rem 4rem;
   background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  cursor: pointer;
 }
 
-@media screen and (min-width: 600px) {
-  .subscribe__btn {
-    font-size: 12px;
-    border-radius: 0.8rem;
-    width: 11rem;
-    height: 4.8rem;
-  }
-}
 @media screen and (min-width: 900px) {
-  .subscribe__btn {
+  .btn__tertiary {
     font-size: 1.7rem;
     line-height: 2.3rem;
-    border-radius: 1rem;
-    width: 18rem;
-    height: 6.8rem;
+    padding: 2rem 5rem;
   }
 }
 .btn-header {
@@ -272,34 +265,25 @@ h5 {
 .container {
   position: relative;
   max-width: 122.8rem;
+  padding: 2rem;
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 900px) {
-  .container {
-    margin: 0 5.8rem 0 6.4rem;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .container {
-    margin: 0 5.8rem 0 15.4rem;
-  }
-}
-.category__services__list--item {
+.category__services__list__item {
   margin-top: 10rem;
-  width: 19rem;
-  height: 23rem;
+  max-width: 23rem;
+  padding: 2rem;
   text-align: center;
+  cursor: pointer;
 }
-.category__services__list--item h4 {
+.category__services__list__item h4 {
   margin-top: 2.9rem;
 }
-.category__services__list--item p {
+.category__services__list__item p {
   margin-top: 1.5rem;
 }
-.category__services__list--item:hover {
-  width: 27rem;
-  height: 30rem;
-  background: #FFFFFF;
+.category__services__list__item:hover {
+  background: #fff;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
   border-radius: 36px;
 }
@@ -309,18 +293,55 @@ h5 {
   height: 16px;
 }
 
-.facebook .tweeter {
-  background: #fff;
-}
-
 .instagram {
   fill: #fff;
   background: conic-gradient(from 180deg at 50% 50%, #B8D2F1 0deg, #F289AA 60deg, #C68BF0 106.09deg, #D164DA 153.75deg, #C963E8 221.25deg, #BFC2E8 258.75deg, #FFC999 288.75deg, #D0D8C9 315deg, #BAD0F1 334.13deg, #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
 }
 
-.category {
-  margin: 0 auto;
+.subscribe__info__input {
+  max-width: 75rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
 }
+.subscribe__info__input .input__contact {
+  width: 22rem;
+  background: #fff;
+  padding: 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.subscribe__info__input .input__contact::placeholder {
+  padding-left: 4rem;
+  color: #39425D;
+}
+.subscribe__info__input .label {
+  position: absolute;
+  top: 1.2rem;
+  left: 1rem;
+  cursor: text;
+}
+.subscribe__info__input .label img {
+  color: #39425D;
+  width: 15px;
+}
+.subscribe__info .input__contact:not(:placeholder-shown) + .label {
+  opacity: 0;
+}
+.subscribe__info .input__contact:focus {
+  outline: none;
+}
+.subscribe__info .input__contact:focus:invalid {
+  background: rgba(237, 50, 8, 0.4);
+}
+.subscribe__info .input__contact:required:valid {
+  background: rgba(111, 243, 111, 0.4);
+}
+
 .category__description {
   display: flex;
   flex-direction: row;
@@ -339,13 +360,16 @@ h5 {
   display: none;
   position: absolute;
   top: 0;
-  right: 1%;
+  right: -1rem;
 }
 .category__services__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.category__services__list__item img {
+  width: 130px;
 }
 
 @media screen and (min-width: 900px) {
@@ -392,7 +416,7 @@ h5 {
 }
 .subscribe__mail-icon {
   position: absolute;
-  max-width: 15%;
+  max-width: 7rem;
   top: -1rem;
   right: 2rem;
 }
@@ -400,7 +424,7 @@ h5 {
   display: none;
   position: absolute;
   bottom: -3rem;
-  right: -4%;
+  right: -7rem;
 }
 .subscribe__info {
   display: flex;
@@ -413,44 +437,7 @@ h5 {
   max-width: 86rem;
   text-align: center;
 }
-.subscribe__info__input {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 6rem;
-}
-.subscribe__info__input .input_s {
-  width: 25rem;
-  height: 3.8rem;
-  background: #fff;
-  padding: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.subscribe__info__input .input_s::placeholder {
-  padding-left: 4rem;
-  color: #39425D;
-}
-.subscribe__info__input .label {
-  position: absolute;
-  top: 1.2rem;
-  left: 1rem;
-  cursor: text;
-}
-.subscribe__info__input .label img {
-  color: #39425D;
-  width: 40%;
-}
-.subscribe__info__input .input_s:not(:placeholder-shown) + .label {
-  opacity: 0;
-}
-.subscribe__info__input .input_s:focus {
-  outline: none;
-}
-.subscribe__info__input .subscribe__btn {
+.subscribe__info .btn__tertiary {
   margin-top: 4rem;
 }
 
@@ -462,6 +449,9 @@ h5 {
     top: 4rem;
     left: -9rem;
   }
+  .subscribe__info__input .input__contact {
+    width: 30rem;
+  }
 }
 @media screen and (min-width: 600px) {
   .subscribe__background {
@@ -471,9 +461,8 @@ h5 {
     top: 4rem;
     left: -9rem;
   }
-  .subscribe__info__input .input_s {
-    width: 35rem;
-    height: 4.8rem;
+  .subscribe__info__input .input__contact {
+    width: 40rem;
   }
   .subscribe__info .label {
     top: 1.7rem;
@@ -502,21 +491,19 @@ h5 {
     right: 0rem;
   }
   .subscribe__stars {
-    display: inline-block;
+    display: block;
   }
   .subscribe__info__input {
-    width: 62.5rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-  .subscribe__info__input .input_s {
+  .subscribe__info__input .input__contact {
     font-size: 1.7rem;
     border-radius: 1rem;
-    width: 42rem;
-    height: 6.8rem;
+    width: 45rem;
   }
-  .subscribe__info__input .subscribe__btn {
+  .subscribe__info__input .btn__tertiary {
     margin-top: 0;
   }
   .subscribe__info .label {
@@ -524,14 +511,14 @@ h5 {
     left: 1rem;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
   .subscribe__mail-icon {
-    right: 3rem;
+    right: -1rem;
   }
   .subscribe__circles-right {
     display: block;
     top: 0rem;
-    right: 6rem;
+    right: 2rem;
   }
 }
 .footer {
@@ -559,12 +546,14 @@ h5 {
 }
 .footer__list-item {
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 .footer__list-item:last-child {
   margin-bottom: 4rem;
 }
 .footer__social {
   margin: 0 auto;
+  cursor: pointer;
 }
 .footer__social__wrapper {
   display: flex;
@@ -583,6 +572,7 @@ h5 {
   height: 41px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 22px;
+  cursor: pointer;
 }
 .footer__social__text {
   margin: 2rem 0 2rem 0;
