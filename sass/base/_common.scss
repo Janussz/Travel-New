@@ -8,7 +8,15 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    font-family: $font-primary, sans-serif;
+}
+
 img {
     max-width: 100%;
     height: auto;
+}
+
+ul {
+    list-style: none;
 }

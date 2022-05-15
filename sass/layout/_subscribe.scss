@@ -1,0 +1,173 @@
+.subscribe {
+  margin-top: 5rem;
+
+  &__background {
+    position: relative;
+    max-width: 125rem;
+    padding-top: 7rem;
+    background-image: url(./../img/subscribe/Rectangle\ 164.svg);
+    background-repeat: no-repeat;
+  }
+
+  &__circles-left {
+    position: absolute;
+    top: 11rem;
+    left: -9rem;
+    z-index: -1;
+  }
+
+  &__circles-right {
+    display: none;
+    position: absolute;
+    top: 0rem;
+    right: 8rem;
+    z-index: -1;
+  }
+
+  &__mail-icon {
+    position: absolute;
+    max-width: 7rem;
+    top: -1rem;
+    right: 2rem;
+  }
+
+  &__stars {
+    display: none;
+    position: absolute;
+    bottom: -3rem;
+    right: -7rem;
+  }
+
+  &__info {
+    @include flex(column, space-between, center);
+
+    &__text {
+      padding: 0 1rem;
+      max-width: 86rem;
+      text-align: center;
+    }
+
+    .btn__tertiary {
+      margin-top: 4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .subscribe {
+    &__background {
+      padding: 9rem 1rem;
+    }
+
+    &__circles-left {
+      top: 4rem;
+      left: -9rem;
+    }
+
+    &__info {
+      &__input {
+        .input__contact {
+          width: 30rem;
+
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .subscribe {
+    &__background {
+      padding: 10rem 1rem;
+    }
+
+    &__circles-left {
+      top: 4rem;
+      left: -9rem;
+    }
+
+    &__info {
+      &__input {
+        .input__contact {
+          width: 40rem;
+
+        }
+      }
+
+      .label {
+        top: 1.7rem;
+        left: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .subscribe {
+    .p_subscribe {
+      font-size: 33px;
+      line-height: 54px;
+    }
+
+    &__background {
+      padding: 10rem 1rem;
+    }
+
+    &__mail-icon {
+      top: -1rem;
+      right: -3rem;
+    }
+
+    &__circles-left {
+      top: 4rem;
+      left: -9rem;
+    }
+
+    &__circles-right {
+      display: block;
+      top: 0rem;
+      right: 0rem;
+    }
+
+    &__stars {
+      display: block;
+    }
+
+    &__info {
+      &__input {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .input__contact {
+          font-size: 1.7rem;
+          border-radius: 1rem;
+          width: 45rem;
+        }
+
+        .btn__tertiary {
+          margin-top: 0;
+        }
+      }
+
+      .label {
+        top: 2.7rem;
+        left: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    &__mail-icon {
+      right: -1rem;
+    }
+
+    &__circles-right {
+      display: block;
+      top: 0rem;
+      right: 2rem;
+    }
+  }
+}
