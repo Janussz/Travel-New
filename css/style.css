@@ -759,6 +759,11 @@ h5 {
     align-items: center;
   }
 }
+main {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .category__description {
   display: flex;
   flex-direction: row;
