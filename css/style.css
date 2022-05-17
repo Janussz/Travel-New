@@ -43,22 +43,6 @@ h1 {
   color: #181E4B;
 }
 
-.cn__nm {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #5E6282;
-}
-
-.cn__desc {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #5E6282;
-}
-
 h2 {
   font-family: "Volkhov";
   font-size: 36px;
@@ -107,14 +91,6 @@ h5 {
   color: #5E6282;
 }
 
-.p_foot_head {
-  font-family: "Poppins";
-  font-size: 12px;
-  line-height: 15px;
-  font-weight: 500;
-  color: #5E6282;
-}
-
 .p_foot_title {
   font-family: "Poppins";
   font-size: 16px;
@@ -127,23 +103,6 @@ h5 {
   font-family: "Poppins";
   font-size: 14px;
   line-height: 18px;
-  font-weight: 500;
-  color: #5E6282;
-}
-
-.p_foot_social {
-  font-family: "Poppins";
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 500;
-  color: #5E6282;
-  letter-spacing: 0.005em;
-}
-
-.p_foot_copyright {
-  font-family: "Poppins";
-  font-size: 12px;
-  line-height: 16px;
   font-weight: 500;
   color: #5E6282;
 }
@@ -164,6 +123,23 @@ h5 {
   color: #5E6282;
 }
 
+.p_foot_social {
+  font-family: "Poppins";
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #5E6282;
+  letter-spacing: 0.005em;
+}
+
+.card__name {
+  font-family: "Poppins";
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #000;
+}
+
 .p-header-nav {
   font-family: "Poppins";
   font-size: 17px;
@@ -180,6 +156,30 @@ h5 {
   color: #686D77;
 }
 
+.card__summary {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #84829A;
+}
+
+.cn__nm {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #5E6282;
+}
+
+.cn__desc {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #5E6282;
+}
+
 .container__name {
   font-family: "Poppins";
   font-size: 16px;
@@ -188,20 +188,20 @@ h5 {
   color: #5E6282;
 }
 
-.card__name {
+.p_foot_head {
   font-family: "Poppins";
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 12px;
+  line-height: 15px;
   font-weight: 500;
-  color: #000;
+  color: #5E6282;
 }
 
-.card__summary {
+.p_foot_copyright {
   font-family: "Poppins";
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 16px;
   font-weight: 500;
-  color: #84829A;
+  color: #5E6282;
 }
 
 @font-face {
@@ -279,14 +279,14 @@ h5 {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(./../../fonts/GoogleSans-Regular.ttf);
+  src: url(./../fonts/GoogleSans-Regular.ttf);
 }
 @font-face {
   font-family: "GoogleSans";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(./../../fonts/GoogleSans-Medium.ttf);
+  src: url(./../fonts/GoogleSans-Medium.ttf);
 }
 .btn__tertiary {
   font-family: "OpenSans";
