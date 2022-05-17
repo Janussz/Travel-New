@@ -1,0 +1,20 @@
+.btn__tertiary {
+  @include font(10px, 16px, 600, $col-white, $font-primary);
+  max-width: 18rem;
+  padding: 2rem 4rem;
+  background: linear-gradient(180deg, $col-orange-300 0%, $col-orange-400 100%);
+  border-radius: 10px;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 900px) {
+  .btn__tertiary {
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+    padding: 2rem 5rem;
+  }
+}

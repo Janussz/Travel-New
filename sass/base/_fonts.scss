@@ -26,6 +26,14 @@
 @font-face {
   font-family: $font-primary;
   font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./../../fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: $font-primary;
+  font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url(./../../fonts/OpenSans-Bold.ttf);
@@ -45,6 +53,14 @@
   font-weight: 500;
   font-display: swap;
   src: url(./../../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: $font-secondary;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./../../fonts/Poppins-SemiBold.ttf);
 }
 
 @font-face {
