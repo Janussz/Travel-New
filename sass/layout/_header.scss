@@ -81,7 +81,7 @@
         }
 
         &__content {
-            @include decore(url('./../../img/header/header-Image.svg'), contain, no-repeat, right);
+            @include decore(url('./../img/header/header-Image.svg'), contain, no-repeat, right);
 
             &__wrap {
                 max-width: 35rem;

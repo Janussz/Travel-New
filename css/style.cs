@@ -638,7 +638,7 @@ h3 {
     flex-grow: 1;
   }
   .header__content {
-    background-image: url("./../../img/header/header-Image.svg");
+    background-image: url("./../img/header/header-Image.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
