@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(./../../fonts/OpenSans-Regular.ttf);
+  src: url(./../fonts/OpenSans-Regular.ttf);
 }
 
 @font-face {
@@ -20,7 +20,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(./../../fonts/OpenSans-Medium.ttf);
+  src: url(./../fonts/OpenSans-Medium.ttf);
 }
 
 @font-face {
@@ -28,7 +28,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(./../../fonts/OpenSans-SemiBold.ttf);
+  src: url(./../fonts/OpenSans-SemiBold.ttf);
 }
 
 @font-face {
@@ -36,7 +36,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(./../../fonts/OpenSans-Bold.ttf);
+  src: url(./../fonts/OpenSans-Bold.ttf);
 }
 
 @font-face {
@@ -44,7 +44,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(./../../fonts/Poppins-Regular.ttf);
+  src: url(./../fonts/Poppins-Regular.ttf);
 }
 
 @font-face {
@@ -52,7 +52,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(./../../fonts/Poppins-Medium.ttf);
+  src: url(./../fonts/Poppins-Medium.ttf);
 }
 
 @font-face {
@@ -60,7 +60,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(./../../fonts/Poppins-SemiBold.ttf);
+  src: url(./../fonts/Poppins-SemiBold.ttf);
 }
 
 @font-face {
@@ -68,7 +68,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(./../../fonts/Poppins-Bold.ttf);
+  src: url(./../fonts/Poppins-Bold.ttf);
 }
 
 
@@ -77,5 +77,21 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(./../../fonts/Volkhov-Bold.ttf);
+  src: url(./../fonts/Volkhov-Bold.ttf);
+}
+
+@font-face {
+  font-family: $font-quaternary;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./../fonts/GoogleSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: $font-quaternary;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./../fonts/GoogleSans-Medium.ttf);
 }

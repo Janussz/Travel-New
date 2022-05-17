@@ -1,13 +1,5 @@
 h1 {
-  @include font(84px, 89px, 700, $col-black, $font-tertiary);
-}
-
-.cn__nm {
-  @include font(16px, 20px, 700, $col-text-500, $font-secondary);
-}
-
-.cn__desc {
-  @include font(16px, 20px, 400, $col-text-500, $font-secondary);
+  @include font(84px, 89px, 700, $col-text-900, $font-tertiary);
 }
 
 h2 {
@@ -34,10 +26,6 @@ h5 {
   @include font(18px, 36px, 600, $col-text-500, $font-secondary);
 }
 
-.p_foot_head {
-  @include font(12px, 15px, 500, $col-text-500, $font-secondary)
-}
-
 .p_foot_title {
   @include font(16px, 20px, 700, $col-text-900, $font-secondary)
 }
@@ -46,23 +34,52 @@ h5 {
   @include font (14px, 18px, 500, $col-text-500, $font-secondary)
 }
 
+
+.p-header-heading {
+  @include font(20px, 30px, 700, $col-orange-500, $font-secondary);
+}
+
+.p-header-description {
+  @include font(20px, 30px, 500, $col-text-500, $font-secondary);
+}
+
 .p_foot_social {
   @include font(18px, 20px, 500, $col-text-500, $font-secondary);
   letter-spacing: 0.005em;
-}
-
-.p_foot_copyright {
-  @include font(12px, 16px, 500, $col-text-500, $font-secondary)
-}
-
-.container__name {
-  @include font(16px, 27px, 600, $col-text-500, $font-secondary);
 }
 
 .card__name {
   @include font(18px, 22px, 500, $col-black, $font-secondary);
 }
 
+.p-header-nav {
+  @include font(17px, 22px, 400, $col-nav-900, $font-secondary);
+}
+
+.btn-play-text {
+  @include font(17px, 22px, 400, $col-nav-500, $font-secondary);
+}
+
 .card__summary {
   @include font(16px, 20px, 500, $col-text-400, $font-secondary);
+}
+
+.cn__nm {
+  @include font(16px, 20px, 700, $col-text-500, $font-secondary);
+}
+
+.cn__desc {
+  @include font(16px, 20px, 400, $col-text-500, $font-secondary);
+}
+
+.container__name {
+  @include font(16px, 27px, 600, $col-text-500, $font-secondary);
+}
+
+.p_foot_head {
+  @include font(12px, 15px, 500, $col-text-500, $font-secondary)
+}
+
+.p_foot_copyright {
+  @include font(12px, 16px, 500, $col-text-500, $font-secondary);
 }

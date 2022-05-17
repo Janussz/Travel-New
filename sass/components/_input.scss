@@ -1,53 +1,49 @@
-.subscribe {
-  &__info {
-    &__input {
-      margin: 0 auto;
-      max-width: 75rem;
-      position: relative;
-      @include flex(column, center, center);
-      margin-top: 6rem;
+.input {
+  margin: 0 auto;
+  max-width: 75rem;
+  position: relative;
+  @include flex(column, center, center);
+  margin-top: 6rem;
 
-      .input__contact {
-        width: 22rem;
-        background: $col-white;
-        padding: 2rem;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
+  .input__contact {
+    width: 22rem;
+    background: $col-white;
+    padding: 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
-      .input__contact::placeholder {
-        padding-left: 4rem;
-        color: $col-text-600;
-      }
+  .input__contact::placeholder {
+    padding-left: 4rem;
+    color: $col-text-600;
+  }
 
-      .label {
-        position: absolute;
-        top: 1.2rem;
-        left: 1rem;
-        cursor: text;
+  .label {
+    position: absolute;
+    top: 1.2rem;
+    left: 1rem;
+    cursor: text;
 
-        img {
-          color: $col-text-600;
-          width: 15px;
-        }
-      }
-    }
-
-    .input__contact:not(:placeholder-shown)+.label {
-      opacity: 0;
-    }
-
-    .input__contact:focus {
-      outline: none;
-    }
-
-    .input__contact:focus:invalid {
-      background: rgba(237, 50, 8, 0.4);
-    }
-
-    .input__contact:required:valid {
-      background: rgba(111, 243, 111, 0.4);
+    img {
+      color: $col-text-600;
+      width: 15px;
     }
   }
+}
+
+.input__contact:not(:placeholder-shown)+.label {
+  opacity: 0;
+}
+
+.input__contact:focus {
+  outline: none;
+}
+
+.input__contact:focus:invalid {
+  background: $bg-red;
+}
+
+.input__contact:required:valid {
+  background: $bg-green;
 }
