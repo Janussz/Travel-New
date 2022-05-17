@@ -51,14 +51,6 @@ h2 {
   color: #14183E;
 }
 
-h3 {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 27px;
-  font-weight: 600;
-  color: #5E6282;
-}
-
 h4 {
   font-family: "OpenSans";
   font-size: 20px;
@@ -75,14 +67,6 @@ h5 {
   color: #181E4B;
 }
 
-.p_service {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 500;
-  color: #5E6282;
-}
-
 .p_subscribe {
   font-family: "Poppins";
   font-size: 18px;
@@ -97,6 +81,22 @@ h5 {
   line-height: 20px;
   font-weight: 700;
   color: #181E4B;
+}
+
+.p_service {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #5E6282;
+}
+
+h3 {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 600;
+  color: #5E6282;
 }
 
 .p_foot_list {
@@ -475,7 +475,7 @@ h5 {
   z-index: -1;
   width: 385px;
   height: 12px;
-  background-image: url(/img/header/underscore.svg);
+  background-image: url(./../../img/header/underscore.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: false;

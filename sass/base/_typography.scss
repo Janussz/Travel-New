@@ -6,10 +6,6 @@ h2 {
   @include font(36px, 45px, 700, $col-text-800, $font-tertiary);
 }
 
-h3 {
-  @include font(16px, 27px, 600, $col-text-500, $font-secondary);
-}
-
 h4 {
   @include font(20px, 27px, 600, $col-text-700, $font-primary);
 }
@@ -18,9 +14,6 @@ h5 {
   @include font(26px, 36px, 500, $col-text-900, $font-secondary)
 }
 
-.p_service {
-  @include font(16px, 26px, 500, $col-text-500, $font-secondary);
-}
 
 .p_subscribe {
   @include font(18px, 36px, 600, $col-text-500, $font-secondary);
@@ -28,6 +21,14 @@ h5 {
 
 .p_foot_title {
   @include font(16px, 20px, 700, $col-text-900, $font-secondary)
+}
+
+.p_service {
+  @include font(16px, 26px, 500, $col-text-500, $font-secondary);
+}
+
+h3 {
+  @include font(16px, 27px, 600, $col-text-500, $font-secondary);
 }
 
 .p_foot_list {
