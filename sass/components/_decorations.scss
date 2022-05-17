@@ -1,5 +1,5 @@
 .blot {
-    @include decore(url('./img/header/Decore.svg'), contain, no-repeat, top right);
+    @include decore(url('./../../img/header/Decore.svg'), contain, no-repeat, top right);
 }
 
 @media screen and (min-width: 700px) {
@@ -19,7 +19,7 @@
         z-index: -1;
         width: 385px;
         height: 12px;
-        @include decore(url(./img/header/underscore.svg), contain, no-repeat);
+        @include decore(url(./../../img/header/underscore.svg), contain, no-repeat);
 
     }
 }
