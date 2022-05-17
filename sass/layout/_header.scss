@@ -59,7 +59,6 @@
     &__buttons {
         @include flex(column, center, start);
         @include gap(2rem);
-        // row-gap: 2rem;
 
         &__wrap {
             @include flex;
@@ -171,7 +170,7 @@
     .header {
         &__nav {
             &__login {
-                column-gap: 2rem;
+                @include gap(false, 2rem);
             }
         }
 

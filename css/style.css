@@ -718,6 +718,14 @@ h5 {
   .header__nav__login {
     column-gap: 2rem;
   }
+  @supports not (column-gap: 2rem) {
+    .header__nav__login > * {
+      margin-right: 2rem;
+    }
+    .header__nav__login > *:last-child {
+      margin-right: 0;
+    }
+  }
   .header__content__wrap {
     padding-top: 11.2rem;
     padding-bottom: 11.7rem;
