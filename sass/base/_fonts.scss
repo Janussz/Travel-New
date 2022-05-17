@@ -79,3 +79,19 @@
   font-display: swap;
   src: url(./../../fonts/Volkhov-Bold.ttf);
 }
+
+@font-face {
+  font-family: $font-quaternary;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./../../fonts/GoogleSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: $font-quaternary;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./../../fonts/GoogleSans-Medium.ttf);
+}
