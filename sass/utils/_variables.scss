@@ -2,6 +2,8 @@
 $col-white:#fff;
 $col-background:#E5E5E5;
 
+
+
 $col-yellow-500:#F1A501;
 
 $col-orange-300:#FF946D;
@@ -17,6 +19,7 @@ $col-text-700:#1E1D4C;
 $col-text-800:#14183E;
 $col-text-900:#181E4B;
 
+$col-nav-500:#686D77;
 $col-nav-900:#212832;
 $col-black:#000;
 
@@ -24,7 +27,7 @@ $col-black:#000;
 $font-primary:"OpenSans";
 $font-secondary:"Poppins";
 $font-tertiary:"Volkhov";
-
+$font-quaternary:"GoogleSans";
 // background
 $bg-rainbow:conic-gradient(from 180deg at 50% 50%, #B8D2F1 0deg, #F289AA 60deg, #C68BF0 106.09deg, #D164DA 153.75deg, #C963E8 221.25deg, #BFC2E8 258.75deg, #FFC999 288.75deg, #D0D8C9 315deg, #BAD0F1 334.13deg, #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
 $bg-red:rgba(237, 50, 8, 0.4);
@@ -39,8 +42,6 @@ $bs-bg-box:0px 100px 80px rgba(0, 0, 0, 0.02),
 0px 20px 13px rgba(0, 0, 0, 0.01),
 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
-
-
-
+$bs-orange-btn: 0px 15px 30px rgba(223, 105, 81, 0.3);
 
 // breakpointy
