@@ -18,3 +18,47 @@
     padding: 2rem 5rem;
   }
 }
+
+.btn-header {
+  max-width: 10.2rem;
+  padding: 0.9rem 2.1rem;
+  background-color: transparent;
+  @include font(17px, 21px, 500, $col-nav-900, $font-quaternary);
+  color: $col-nav-900;
+  border: 1px solid $col-nav-900;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &--no-border {
+    border: none;
+  }
+
+  &--yellow {
+    max-width: 17rem;
+    padding: 18px 26px;
+    background-color: $col-yellow-500;
+    @include font(18px, 23px, 500, $col-white);
+    border: none;
+  }
+}
+
+.btn-play {
+  position: relative;
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 26px;
+  border: none;
+  background-color: $col-orange-500;
+  box-shadow: $shadow-orange;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 22px;
+    width: 12px;
+    height: 15px;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    background-color: $col-white;
+  }
+}

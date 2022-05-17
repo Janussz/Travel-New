@@ -9,9 +9,45 @@
   <title>Travel agency</title>
 </head>
 
-<body>
+<body class="blot">
+  <header class="header container">
+    <nav class="header__nav">
+      <figure class="header__nav__logo">
+        <a href="">
+          <img src="./img/header/Logo.svg" alt="Logo img" class="logo">
+        </a>
+      </figure>
+      <ul class="header__nav__list">
+        <li class="header__nav__item ">Desitnations</li>
+        <li class="header__nav__item ">Hotels</li>
+        <li class="header__nav__item ">Flights</li>
+        <li class="header__nav__item ">Bookings</li>
+      </ul>
+      <div class="header__nav__login">
+        <button class="btn-header btn-header--no-border">Login</button>
+        <button class="btn-header">Sign up</button>
+        <button class="btn-header btn-header--no-border">EN &#8595;</button>
+      </div>
+      <svg class="menu">
+        <use xlink:href="./img/header/symbol-defs.svg#menu"></use>
+      </svg>
+    </nav>
+    <div class="header__content">
+      <section class="header__content__wrap">
+        <p class="p-header-heading">Best Destinations around the world</p>
+        <h1 class="h1">Travel, <span class="underscore">enjoy</span> and live a new and full life</h1>
+        <p class="p-header-description">Built Wicket longer admire do barton vanity itself do in it. Preferred to
+          sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
+        <div class="header__buttons">
+          <button class="btn-header btn-header--yellow">Find out more</button>
+          <div class="header__buttons__wrap">
+            <button class="btn-play"></button><a href="" class="btn-play-text">Play Demo</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
   <main>
-
     <section class="category container">
       <div class="category__description">
         <div class="category__description__text">
@@ -50,26 +86,6 @@
               military customers</p>
           </li>
         </ul>
-      </div>
-    </section>
-
-    <section class="subscribe container">
-      <div class="subscribe__background">
-        <img src="./img/subscribe/Group 77.svg" alt="mail icon" class="subscribe__mail-icon">
-        <img src="./img/subscribe/Group 5.svg" alt="stars background" class="subscribe__stars">
-        <img src="./img/subscribe/circle.svg" alt="circle on background" class="subscribe__circles-left">
-        <img src="./img/subscribe/circle-2.svg" alt="circle on background" class="subscribe__circles-right">
-        <div class="subscribe__info">
-          <p class="subscribe__info__text p_subscribe">Subscribe to get information, latest news and other
-            interesting offers about Cobham</p>
-          <div class="subscribe__info__form input">
-            <input id="contact" type="email" class="input__contact" placeholder="Your email" required>
-            <label for="contact" class="label">
-              <img src="./img/subscribe/mail2.svg" alt="envelop image">
-            </label>
-            <button class="btn__tertiary">Subscribe</button>
-          </div>
-        </div>
       </div>
     </section>
     <section class="container">
@@ -135,6 +151,25 @@
             </span>
             <hr class="line">
             <hr class="line line__blue">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe container">
+      <div class="subscribe__background">
+        <img src="./img/subscribe/Group 77.svg" alt="mail icon" class="subscribe__mail-icon">
+        <img src="./img/subscribe/Group 5.svg" alt="stars background" class="subscribe__stars">
+        <img src="./img/subscribe/circle.svg" alt="circle on background" class="subscribe__circles-left">
+        <img src="./img/subscribe/circle-2.svg" alt="circle on background" class="subscribe__circles-right">
+        <div class="subscribe__info">
+          <p class="subscribe__info__text p_subscribe">Subscribe to get information, latest news and other
+            interesting offers about Cobham</p>
+          <div class="subscribe__info__input">
+            <input id="contact" type="email" class="input__contact" placeholder="Your email" required>
+            <label for="contact" class="label">
+              <img src="./img/subscribe/mail2.svg" alt="envelop image">
+            </label>
+            <button class="btn__tertiary">Subscribe</button>
           </div>
         </div>
       </div>
