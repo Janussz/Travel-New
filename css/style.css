@@ -453,7 +453,7 @@ h3 {
 }
 
 .blot {
-  background-image: url("./../../img/header/Decore.svg");
+  background-image: url("./../img/header/Decore.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
@@ -475,7 +475,7 @@ h3 {
   z-index: -1;
   width: 385px;
   height: 12px;
-  background-image: url(./../../img/header/underscore.svg);
+  background-image: url(./../img/header/underscore.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: false;
