@@ -12,10 +12,28 @@
   p {
     margin-top: 1.5rem;
   }
+
+  &::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    @include decore(url('./../img/services/Rectangle\ 157.svg'), contain, no-repeat, right);
+    top: 10.5rem;
+    left: 0rem;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s;
+  }
 }
 
 .bg__box:hover {
   background: $col-white;
   box-shadow: $bs-bg-box;
   border-radius: 36px;
+
+  &::before {
+    opacity: 1;
+    transform: translate(-4rem, 11rem);
+  }
 }
