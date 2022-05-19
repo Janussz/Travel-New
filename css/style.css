@@ -35,173 +35,116 @@ a {
   text-decoration: none;
 }
 
-h1 {
+.h1 {
   font-family: "Volkhov";
   font-size: 84px;
   line-height: 89px;
-  font-weight: 700;
   color: #181E4B;
 }
 
-h2 {
+.h2 {
   font-family: "Volkhov";
   font-size: 36px;
   line-height: 45px;
-  font-weight: 700;
   color: #14183E;
 }
 
-h4 {
-  font-family: "OpenSans";
-  font-size: 20px;
-  line-height: 27px;
-  font-weight: 600;
-  color: #1E1D4C;
-}
-
-h5 {
+.h3 {
   font-family: "Poppins";
   font-size: 26px;
   line-height: 36px;
-  font-weight: 500;
   color: #181E4B;
 }
 
-.p_subscribe {
-  font-family: "Poppins";
-  font-size: 18px;
-  line-height: 36px;
-  font-weight: 600;
-  color: #5E6282;
+.h4 {
+  font-family: "OpenSans";
+  font-size: 20px;
+  line-height: 27px;
+  color: #1E1D4C;
 }
 
-.p_foot_title {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #181E4B;
-}
-
-.p_service {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 500;
-  color: #5E6282;
-}
-
-h3 {
+.h5 {
   font-family: "Poppins";
   font-size: 16px;
   line-height: 27px;
-  font-weight: 600;
   color: #5E6282;
 }
 
-.p_foot_list {
-  font-family: "Poppins";
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 500;
-  color: #5E6282;
-}
-
-.p-header-heading {
-  font-family: "Poppins";
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #DF6951;
-}
-
-.p-header-description {
-  font-family: "Poppins";
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 500;
-  color: #5E6282;
-}
-
-.p_foot_social {
-  font-family: "Poppins";
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 500;
-  color: #5E6282;
-  letter-spacing: 0.005em;
-}
-
-.card__name {
-  font-family: "Poppins";
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 500;
-  color: #000;
-}
-
-.p-header-nav {
-  font-family: "Poppins";
-  font-size: 17px;
-  line-height: 22px;
-  font-weight: 400;
-  color: #212832;
-}
-
-.btn-play-text {
-  font-family: "Poppins";
-  font-size: 17px;
-  line-height: 22px;
-  font-weight: 400;
-  color: #686D77;
-}
-
-.card__summary {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
-  color: #84829A;
-}
-
-.cn__nm {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #5E6282;
-}
-
-.cn__desc {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #5E6282;
-}
-
-.container__name {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 27px;
-  font-weight: 600;
-  color: #5E6282;
-}
-
-.p_foot_head {
-  font-family: "Poppins";
-  font-size: 12px;
-  line-height: 15px;
-  font-weight: 500;
-  color: #5E6282;
-}
-
-.p_foot_copyright {
+.p_foot_headtext__xs {
   font-family: "Poppins";
   font-size: 12px;
   line-height: 16px;
-  font-weight: 500;
   color: #5E6282;
+}
+
+.text__sm {
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 18px;
+  color: #5E6282;
+}
+
+.text__md {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 20px;
+  color: #84829A;
+}
+
+.text__lg {
+  font-family: "Poppins";
+  font-size: 17px;
+  line-height: 22px;
+  color: #212832;
+}
+
+.text__xl {
+  font-family: "Poppins";
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+}
+
+.text__xxl {
+  font-family: "Poppins";
+  font-size: 20px;
+  line-height: 30px;
+  color: #5E6282;
+}
+
+.font_light {
+  font-weight: 300;
+}
+.font_normal {
+  font-weight: 400;
+}
+.font_medium {
+  font-weight: 500;
+}
+.font_semi_bold {
+  font-weight: 600;
+}
+.font_bold {
+  font-weight: 700;
+}
+
+.color_white {
+  color: #fff;
+}
+.color_black {
+  color: #000;
+}
+.color_dark_blue {
+  color: #181E4B;
+}
+.color_dark_grey {
+  color: #212832;
+}
+.color_grey {
+  color: #686D77;
+}
+.color_orange {
+  color: #DF6951;
 }
 
 @font-face {
@@ -289,11 +232,9 @@ h3 {
   src: url(./../fonts/GoogleSans-Medium.ttf);
 }
 .btn__tertiary {
-  font-family: "OpenSans";
   font-size: 10px;
   line-height: 16px;
-  font-weight: 600;
-  color: #fff;
+  color: "OpenSans";
   max-width: 18rem;
   padding: 2rem 4rem;
   background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
@@ -315,11 +256,9 @@ h3 {
   max-width: 10.2rem;
   padding: 0.9rem 2.1rem;
   background-color: transparent;
-  font-family: "GoogleSans";
   font-size: 17px;
   line-height: 21px;
-  font-weight: 500;
-  color: #212832;
+  color: "GoogleSans";
   color: #212832;
   border: 1px solid #212832;
   border-radius: 5px;
@@ -332,10 +271,10 @@ h3 {
   max-width: 17rem;
   padding: 18px 26px;
   background-color: #F1A501;
+  font-family: #fff;
   font-size: 18px;
   line-height: 23px;
-  font-weight: 500;
-  color: #fff;
+  color: 500;
   border: none;
 }
 
@@ -453,7 +392,7 @@ h3 {
 }
 
 .blot {
-  background-image: url("./../../img/header/Decore.svg");
+  background-image: url("./../img/header/Decore.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
@@ -475,7 +414,7 @@ h3 {
   z-index: -1;
   width: 385px;
   height: 12px;
-  background-image: url(./../../img/header/underscore.svg);
+  background-image: url(./../img/header/underscore.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: false;
@@ -626,11 +565,9 @@ h3 {
   }
   .header__nav__list {
     max-width: 46rem;
-    font-family: "GoogleSans";
     font-size: 17px;
     line-height: 21px;
-    font-weight: 500;
-    color: #212832;
+    color: "GoogleSans";
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -638,7 +575,7 @@ h3 {
     flex-grow: 1;
   }
   .header__content {
-    background-image: url("./../../img/header/header-Image.svg");
+    background-image: url("./../img/header/header-Image.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -659,10 +596,10 @@ h3 {
   }
   .header__nav__list {
     max-width: 46rem;
+    font-family: #212832;
     font-size: 17px;
     line-height: 21px;
-    font-weight: 500;
-    color: #212832;
+    color: 500;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -826,11 +763,9 @@ main {
 }
 
 .trip__title {
-  font-family: "Poppins";
   font-size: 14px;
   line-height: 20px;
-  font-weight: 500;
-  color: #84829A;
+  color: "Poppins";
 }
 
 .line {

@@ -73,6 +73,10 @@
 }
 
 .color {
+  &_white {
+    color: $col-white;
+  }
+
   &_black {
     color: $col-black;
   }
