@@ -1,7 +1,7 @@
 .btn__tertiary {
   @include font(10px, 16px, 600, $col-white, $font-primary);
   max-width: 18rem;
-  padding: 2rem 4rem;
+  padding: 1.5rem 3rem;
   background: $bg-btn-tertiary;
   border-radius: 10px;
   border: none;
