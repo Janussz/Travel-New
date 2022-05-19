@@ -13,20 +13,13 @@
         &__login {
             display: none;
         }
-
-        .menu {
-            width: 35px;
-            height: 35px;
-            fill: $col-nav-500;
-            cursor: pointer;
-        }
     }
 
     &__content {
         &__wrap {
             max-width: 42.5rem;
 
-            .p-header-heading {
+            .text__md {
                 font-size: 16px;
                 line-height: 25px;
                 margin-bottom: 1rem;
@@ -48,8 +41,9 @@
                 }
             }
 
-            .p-header-description {
+            .text__sm {
                 font-size: 14px;
+                line-height: 25px;
                 margin-bottom: 3rem;
             }
         }
@@ -77,6 +71,12 @@
                 @include font(17px, 21px, $font-quaternary);
                 @include flex(row, space-between);
                 flex-grow: 1;
+
+                &__item {
+                    @include font(17px, 22px, $col-nav-900, $font-quaternary);
+                    font-weight: 400;
+                    cursor: pointer;
+                }
             }
         }
 
@@ -94,6 +94,12 @@
                             width: 185px;
                             height: 12px;
                         }
+                    }
+                }
+
+                .header__buttons__wrap {
+                    .text__lg {
+                        line-height: 26px;
                     }
                 }
             }
@@ -128,7 +134,7 @@
                 padding-bottom: 11.7rem;
                 max-width: 45rem;
 
-                .p-header-heading {
+                .text__md {
                     font-size: 20px;
                     line-height: 30px;
                     margin-bottom: 1rem;
@@ -149,8 +155,9 @@
                     }
                 }
 
-                .p-header-description {
+                .text__sm {
                     font-size: 16px;
+                    line-height: 30px;
                     margin-bottom: 3rem;
                     max-width: 47.7rem;
                 }
@@ -180,7 +187,7 @@
                 padding-bottom: 11.7rem;
                 max-width: 63rem;
 
-                .p-header-heading {
+                .text__md {
                     margin-bottom: 2.4rem;
                 }
 
@@ -199,7 +206,7 @@
                     }
                 }
 
-                .p-header-description {
+                .text__sm {
                     margin-bottom: 3.4rem;
                 }
             }
