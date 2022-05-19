@@ -5,7 +5,7 @@
     align-items: $align;
 }
 
-@mixin font($size, $line, $weight, $color, $font: false) {
+@mixin font($size, $line, $color, $font: false) {
     @if ($font) {
         font-family: $font;
     }
