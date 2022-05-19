@@ -41,6 +41,13 @@
 @media screen and (min-width: 900px) {
   .category {
     &__description {
+      &__text{
+        &--left{
+          text-align: left;
+          margin: 0;
+        }
+      }
+
       .text__md-700 {
         font-size: 18px;
         line-height: 27px;

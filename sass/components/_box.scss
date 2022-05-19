@@ -1,0 +1,20 @@
+.box {
+    @include flex(column, center, center);
+    position: relative;
+}
+
+@media screen and (min-width: 900px) {
+    .box {
+        &__container{
+            @include flex(row, center, left);
+        }
+     }
+}
+
+@media screen and (min-width: 900px) {
+    .box {
+        &__container{
+            justify-content: space-evenly;
+        }
+     }
+}

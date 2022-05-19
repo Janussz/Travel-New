@@ -88,47 +88,47 @@
         </ul>
       </div>
     </section>
-    <section class="container">
-      <h5 class="category__description__title">EASY AND FAST</h5>
-      <h2 class="category__description__header">Book your next trip </br>
-        in 3 easy steps</h2>
-      <div class="container__steps">
-        <div class="step">
-          <div class="step__icon">
-            <img class="icon" src="./img/trips/dest.svg" alt="" srcset="">
-          </div>
-          <div class="step__content">
-            <span class="cn__nm">Choose Destination</span>
-            <span class="cn__desc">Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Urna, tortor tempus. </span>
+    <section class="container box__container category">
+      <div class="box">
+        <div class="category__description category__description__text--left">
+          <div class="category__description__text category__description__text--left">
+            <h5 class="category__description__title">EASY AND FAST</h5>
+            <h2 class="category__description__header">Book your next trip </br>
+              in 3 easy steps</h2>
           </div>
         </div>
-        <div class="step">
-          <div class="step__icon">
-            <img class="icon" src="./img/trips/pay.svg" alt="" srcset="">
+        <div class="container__steps">
+          <div class="step">
+            <img class="step__icon" src="./img/trips/dest.svg" alt="" srcset="">
+            <div class="step__content">
+              <span class="text__md-700">Choose Destination</span>
+              <span class="text__md-400">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Urna, tortor tempus. </span>
+            </div>
           </div>
-          <div class="step__content">
-            <span class="cn__nm">Make Payment</span>
-            <span class="cn__desc">Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Urna, tortor tempus. </span>
+          <div class="step">
+            <img class="step__icon" src="./img/trips/pay.svg" alt="" srcset="">
+            <div class="step__content">
+              <span class="text__md-700">Make Payment</span>
+              <span class="text__md-400">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Urna, tortor tempus. </span>
+            </div>
           </div>
-        </div>
-        <div class="step">
-          <div class="step__icon">
-            <img class="icon" src="./img/trips/reach.svg" alt="" srcset="">
-          </div>
-          <div class="step__content">
-            <span class="cn__nm">Reach Airport on Selected Date</span>
-            <span class="cn__desc">Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Urna, tortor tempus. </span>
+          <div class="step">
+            <img class="step__icon" src="./img/trips/reach.svg" alt="" srcset="">
+            <div class="step__content">
+              <span class="text__md-700">Reach Airport on Selected Date</span>
+              <span class="text__md-400">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Urna, tortor tempus. </span>
+            </div>
           </div>
         </div>
       </div>
       <div class="box">
-        <div class="card card__glow card__front">
-          <img src="./img/trips/Greece.svg" alt="" srcset="">
-          <p class="card__name">Trip To Greece</p>
-          <p class="card__summary">14-29 June | by Robin Johnson</p>
+        <div class="card">
+          <img class="card__img" src="./img/trips/Greece.svg" alt="" srcset="">
+          <p class="text__xl">Trip To Greece</p>
+          <p class="text__md">14-29 June | by Robin Johnson</p>
           <div class="card__buttons">
             <img class="btn__card" src="./img/trips/LEAF.svg" alt="" srcset="">
             <img class="btn__card" src="./img/trips//map icon.svg" alt="" srcset="">
@@ -136,15 +136,15 @@
           </div>
           <div class="card__info">
             <img src="./img/trips/buildings.svg" alt="" srcset="">
-            <p class="card__summary">24 people going</p>
+            <p class="text__md">24 people going</p>
             <img class="fl-r" src="./img/trips/heart (6) 1.svg" alt="" srcset="">
           </div>
         </div>
-        <div class="card card__small card__glow">
+        <div class="card__small">
           <img class="icon" src="./img/trips/Mask Group.svg" alt="" srcset="">
           <div class="trip__card ">
             <p class="trip__title">Ongoing</p>
-            <p class="card__name">Trip to Rome</p>
+            <p class="text__xl">Trip to Rome</p>
             <span class="trip__completition">
               <p class=" trip__title text__blue">40%</p>
               <p class=" trip__title text__black">completed</p>
@@ -153,6 +153,35 @@
             <hr class="line line__blue">
           </div>
         </div>
+      </div>
+    </section>
+    <section class="container box__container category testimonials">
+      <div class="box">
+        <div class="category__description category__description__text--left">
+          <div class="category__description__text category__description__text--left">
+            <h5 class="category__description__title">TESTIMONIALS</h5>
+            <h2 class="category__description__header">What people say
+              about Us.</h2>
+          </div>
+        </div>
+        <div class="dots">
+          <span class="dot dot__checked"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img class="card__photo" src="./img/testimonial/Mike-img.svg" alt="">
+          <p [card-desc] class="text__md text__md--padding">“On the Windows talking painted pasture yet its express parties use. Sure last upon he
+            same as knew next. Of believed or diverted no.”</p>
+          <h5 [card-name] class="category__description__title">Mike Taylor</p>
+          <h5 [card-from]class="text__md">Lahore, Pakistan</p>
+        </div>
+      </div>
+      <div class="box">
+        <img class="arrow arrow__up" src="./img/testimonial/Vector 2.svg" alt="" srcset="">
+        <img class="arrow arrow__down" src="./img/testimonial/Vector 3.svg" alt="" srcset="">
       </div>
     </section>
     <section class="subscribe container">

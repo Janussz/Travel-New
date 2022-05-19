@@ -1,0 +1,55 @@
+.testimonials {
+    flex-direction: space-evenly;
+    
+    .dots {
+        margin: 5rem 0 5rem 0;
+    }
+
+    .category__description__text {
+        max-width: 40.2rem;
+    }
+    .box{
+        .card{
+            .text__md{
+                padding: .5rem 0 1.4rem 0;
+                &--padding{
+                    padding-top: 2.8rem;
+                }
+                
+            }
+            .card__photo{
+                max-width: 6.8rem;
+                position: absolute;
+                top: -2rem;
+                left: -2rem;
+            }
+
+        }
+        .arrow{
+            display: none;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 900px) {
+    .testimonials {
+        padding-left: 8.5rem;
+        .dots {
+            margin-top: 8.2rem;
+        }
+        .box {
+            .card {
+                max-width: 50.8rem;
+            }
+            .arrow{
+                display: block;
+                padding-left: 1rem;
+                &:nth-child(1){
+                    margin-bottom: 5.8rem;
+                }
+            }
+        }
+    }
+}
