@@ -680,7 +680,7 @@ h3 {
   }
   .testimonials .box .arrow {
     display: block;
-    padding-left: 1rem;
+    padding: 1rem;
   }
   .testimonials .box .arrow:nth-child(1) {
     margin-bottom: 5.8rem;
