@@ -1,8 +1,8 @@
 .btn__tertiary {
   @include font(10px, 16px, 600, $col-white, $font-primary);
   max-width: 18rem;
-  padding: 2rem 4rem;
-  background: linear-gradient(180deg, $col-orange-300 0%, $col-orange-400 100%);
+  padding: 1.5rem 3rem;
+  background: $bg-btn-tertiary;
   border-radius: 10px;
   border: none;
   font-size: 1.6rem;
@@ -16,5 +16,49 @@
     font-size: 1.7rem;
     line-height: 2.3rem;
     padding: 2rem 5rem;
+  }
+}
+
+.btn-header {
+  max-width: 10.2rem;
+  padding: 0.9rem 2.1rem;
+  background-color: transparent;
+  @include font(17px, 21px, 500, $col-nav-900, $font-quaternary);
+  color: $col-nav-900;
+  border: 1px solid $col-nav-900;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &--no-border {
+    border: none;
+  }
+
+  &--yellow {
+    max-width: 17rem;
+    padding: 18px 26px;
+    background-color: $col-yellow-500;
+    @include font(18px, 23px, 500, $col-white);
+    border: none;
+  }
+}
+
+.btn-play {
+  position: relative;
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 26px;
+  border: none;
+  background-color: $col-orange-500;
+  box-shadow: $bs-orange-btn;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 22px;
+    width: 12px;
+    height: 15px;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    background-color: $col-white;
   }
 }

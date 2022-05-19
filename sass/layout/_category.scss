@@ -1,4 +1,6 @@
 .category {
+  margin-bottom: 6rem;
+
   &__description {
     @include flex(row, space-between, center);
     margin: 0 auto;
@@ -22,9 +24,12 @@
 
   &__services {
     &__list {
+      z-index: 1;
       @include flex(column, center, center);
 
       &__item {
+        position: relative;
+
         img {
           width: 130px;
         }
@@ -36,7 +41,7 @@
 @media screen and (min-width: 900px) {
   .category {
     &__description {
-      &__title {
+      .text__md-700 {
         font-size: 18px;
         line-height: 27px;
 
