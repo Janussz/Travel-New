@@ -74,34 +74,35 @@
 
       &__list {
         max-width: 46rem;
-        @include font(17px, 21px, 500, $col-nav-900, $font-quaternary);
+        @include font(17px, 21px, $col-nav-900, $font-quaternary);
         @include flex(row, space-between);
         flex-grow: 1;
       }
     }
-        &__content {
-            @include decore(url('./../img/header/header-Image.svg'), contain, no-repeat, right);
 
-            &__wrap {
-                max-width: 35rem;
+    &__content {
+      @include decore(url('./../img/header/header-Image.svg'), contain, no-repeat, right);
 
-                .h1 {
-                    .underscore {
-                        &::before {
-                            bottom: 0;
-                            left: -20px;
-                            width: 185px;
-                            height: 12px;
-                        }
-                  }
-                }
-              }
+      &__wrap {
+        max-width: 35rem;
+
+        .h1 {
+          .underscore {
+            &::before {
+              bottom: 0;
+              left: -20px;
+              width: 185px;
+              height: 12px;
             }
           }
         }
-      
-    
-  
+      }
+    }
+  }
+}
+
+
+
 
 
 @media screen and (min-width: 1024px) {
