@@ -1,60 +1,63 @@
-.card {
+.box {
     position: relative;
-    max-width: 40rem;
-    padding: 2rem;
-    margin-bottom: 35rem;
 
-    &__name {
-        padding: 2.6rem 0 1.3rem 0;
-    }
-
-    &__buttons {
-        padding: 2.1rem 0 3rem 0;
-
-        .btn__card {
-            padding-right: 1.5rem;
-        }
-    }
-
-    &__info {
-        @include flex(row, flex-start, center);
-        padding-bottom: 3rem;
-        max-width: 100%;
-
-        .card__summary {
-            padding-left: 1.5rem;
-        }
-    }
-
-    &__small {
-        @include flex(row, flex-start, flex-start);
-        position: absolute;
-        top: 0;
-        left: 0;
-        max-width: 26.3rem;
-        border-radius: 1.8rem;
-        filter: box-shadow(0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+    &__card {
+        position: relative;
+        max-width: 40rem;
         padding: 2rem;
-        z-index: 1;
-        background-color: $col-white;
+        margin-bottom: 35rem;
 
-        .trip__card {
-            padding-left: 1.2rem;
+        &__name {
+            padding: 2.6rem 0 1.3rem 0;
+        }
 
-            .card__name {
-                padding: .6rem 0 1.4rem 0;
+        &__buttons {
+            padding: 2.1rem 0 3rem 0;
+
+            .btn__card {
+                padding-right: 1.5rem;
             }
+        }
 
-            .trip__completition {
-                @include flex(row, flex-start, center);
+        &__info {
+            @include flex(row, flex-start, center);
+            padding-bottom: 3rem;
+            max-width: 100%;
 
-                .text__black {
-                    color: $col-black;
+            .card__summary {
+                padding-left: 1.5rem;
+            }
+        }
+
+        &__small {
+            @include flex(row, flex-start, flex-start);
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 26.3rem;
+            border-radius: 1.8rem;
+            padding: 2rem;
+            z-index: 1;
+            background-color: $col-white;
+
+            .trip__card {
+                padding-left: 1.2rem;
+
+                .card__name {
+                    padding: .6rem 0 1.4rem 0;
                 }
 
-                .text__blue {
-                    color: $col-text-300;
-                    padding-right: .3rem;
+                .trip__completition {
+                    @include flex(row, flex-start, center);
+
+                    .text__black {
+                        color: $col-black;
+                    }
+
+                    .text__blue {
+                        color: $col-text-300;
+                        padding-right: .3rem;
+                    }
                 }
             }
         }

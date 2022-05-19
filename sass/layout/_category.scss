@@ -39,11 +39,19 @@
       &__title {
         font-size: 18px;
         line-height: 27px;
+
+        &--left {
+          text-align: left
+        }
       }
 
       &__header {
         font-size: 50px;
         line-height: 65px;
+
+        &--left {
+          text-align: left
+        }
       }
 
       &__stars {
