@@ -35,7 +35,7 @@
   }
 
   &__social {
-    margin: 0 auto;
+    margin: 2rem auto;
     cursor: pointer;
 
 
@@ -55,12 +55,13 @@
     }
 
     &__text {
-      margin: 2rem 0 2rem 0;
+      text-align: center;
+      margin: 3rem 0 3rem 0;
     }
   }
 
   &__copyright {
-    width: 21rem;
+    width: 18rem;
     margin: 3rem auto;
   }
 }
