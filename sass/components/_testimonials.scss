@@ -11,26 +11,33 @@
 
     .box {
         .card {
+            padding: 3rem;
+            text-align: center;
+
             .text__md {
                 padding: .5rem 0 1.4rem 0;
-
-                &--padding {
-                    padding-top: 2.8rem;
-                }
-
+                line-height: 2.7rem;
+                // text-align: center;
             }
 
             .card__photo {
                 max-width: 6.8rem;
                 position: absolute;
                 top: -2rem;
-                left: -2rem;
+            }
+
+            &__name {
+                padding: 0 0 .5rem 0;
             }
 
         }
 
         .arrow {
-            display: none;
+
+
+            &__disactivated {
+                fill: grey;
+            }
         }
     }
 
@@ -47,7 +54,21 @@
 
         .box {
             .card {
+                text-align: left;
                 max-width: 50.8rem;
+                padding: 2.8rem 6.8rem 3.4rem 3.4rem;
+
+                .text__md {
+                    padding: .5rem 0 1.4rem 0;
+                    line-height: 3.2rem;
+                }
+
+                .card__photo {
+                    max-width: 6.8rem;
+                    position: absolute;
+                    top: -2rem;
+                    left: -2rem;
+                }
             }
 
             .arrow {

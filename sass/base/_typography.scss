@@ -77,8 +77,16 @@
     color: $col-black;
   }
 
+  &_light_dark_blue {
+    color: $col-text-800;
+  }
+
   &_dark_blue {
     color: $col-text-900;
+  }
+
+  &_faded_blue {
+    color: $col-text-500
   }
 
   &_dark_grey {

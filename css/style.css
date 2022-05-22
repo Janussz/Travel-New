@@ -131,8 +131,14 @@ a {
 .color_black {
   color: #000;
 }
+.color_light_dark_blue {
+  color: #14183E;
+}
 .color_dark_blue {
   color: #181E4B;
+}
+.color_faded_blue {
+  color: #5E6282;
 }
 .color_dark_grey {
   color: #212832;
@@ -360,6 +366,12 @@ a {
   fill: #000;
 }
 
+.arrow {
+  width: 20px;
+  height: 20px;
+  padding: 0 !important;
+}
+
 .input {
   margin: 0 auto;
   max-width: 75rem;
@@ -451,6 +463,9 @@ a {
   box-shadow: 54px -59px 100px -64px rgba(89, 177, 230, 0.4) 1, 0px 36px 40px -18px rgba(66, 68, 90, 0.37);
   z-index: 1;
 }
+.card__disactivated {
+  display: none;
+}
 .card > :nth-child(2) {
   margin: 2.6rem 0 1.3rem 0;
 }
@@ -496,20 +511,21 @@ a {
   background-color: #fff;
   transition: 0.2s;
 }
+.card__small .icon {
+  align-self: flex-start;
+}
 .card__small .trip__card {
   padding-left: 1.2rem;
-  z-index: 2;
 }
 .card__small .trip__card .card__name {
   padding: 0.6rem 0 1.4rem 0;
-  z-index: 2;
 }
 .card__small .trip__card .trip__completition {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  z-index: 2;
+  padding-bottom: 1rem;
 }
 .card__small .trip__card .trip__completition .text__black {
   color: #000;
@@ -544,7 +560,7 @@ a {
 .line__blue {
   width: 30%;
   position: absolute;
-  top: 8.2rem;
+  top: 10.8rem;
   opacity: 100%;
   border: 2px solid #8A79DF;
 }
@@ -598,20 +614,24 @@ a {
 .testimonials .category__description__text {
   max-width: 40.2rem;
 }
+.testimonials .box .card {
+  padding: 3rem;
+  text-align: center;
+}
 .testimonials .box .card .text__md {
   padding: 0.5rem 0 1.4rem 0;
-}
-.testimonials .box .card .text__md--padding {
-  padding-top: 2.8rem;
+  line-height: 2.7rem;
 }
 .testimonials .box .card .card__photo {
   max-width: 6.8rem;
   position: absolute;
   top: -2rem;
-  left: -2rem;
 }
-.testimonials .box .arrow {
-  display: none;
+.testimonials .box .card__name {
+  padding: 0 0 0.5rem 0;
+}
+.testimonials .box .arrow__disactivated {
+  fill: grey;
 }
 
 @media screen and (min-width: 900px) {
@@ -622,7 +642,19 @@ a {
     margin-top: 8.2rem;
   }
   .testimonials .box .card {
+    text-align: left;
     max-width: 50.8rem;
+    padding: 2.8rem 6.8rem 3.4rem 3.4rem;
+  }
+  .testimonials .box .card .text__md {
+    padding: 0.5rem 0 1.4rem 0;
+    line-height: 3.2rem;
+  }
+  .testimonials .box .card .card__photo {
+    max-width: 6.8rem;
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
   }
   .testimonials .box .arrow {
     display: block;
@@ -864,6 +896,9 @@ a {
 }
 .category__description__header {
   margin-top: 1rem;
+  font-family: "Volkhov";
+  font-size: 36px;
+  line-height: 45px;
 }
 .category__description__stars {
   display: none;
