@@ -44,7 +44,16 @@
         }
 
         &>:nth-child(3) {
-            margin-left: auto
+            height: 2rem;
+            width: 4rem;
+            margin-left: auto;
+            stroke: $col-text-350;
+            stroke-width: 3;
+            fill: none;
+
+            &:active {
+                fill: $col-text-350;
+            }
         }
 
     }

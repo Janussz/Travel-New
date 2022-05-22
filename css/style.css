@@ -493,7 +493,15 @@ a {
   margin-left: 1.5rem;
 }
 .card__info > :nth-child(3) {
+  height: 2rem;
+  width: 4rem;
   margin-left: auto;
+  stroke: #4152CA;
+  stroke-width: 3;
+  fill: none;
+}
+.card__info > :nth-child(3):active {
+  fill: #4152CA;
 }
 .card__small {
   display: flex;
