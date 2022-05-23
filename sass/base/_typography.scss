@@ -1,99 +1,91 @@
 .h1 {
-  @include font(84px, 89px, $col-text-900, $font-tertiary);
+  @include font(84px, 89px, 700, $col-text-900, $font-tertiary);
 }
 
 .h2 {
-  @include font(36px, 45px, $col-text-800, $font-tertiary);
+  @include font(50px, 65px, 700, $col-text-800, $font-tertiary);
 }
 
 .h3 {
-  @include font(26px, 36px, $col-text-900, $font-secondary);
+  @include font(18px, 27px, 600, $col-text-900, $font-secondary);
 }
 
 .h4 {
-  @include font(20px, 27px, $col-text-700, $font-primary);
+  @include font(20px, 27px, 600, $col-text-700, $font-primary);
 }
 
 .h5 {
-  @include font(16px, 27px, $col-text-500, $font-secondary);
+  @include font(16px, 27px, 500, $col-text-500, $font-secondary);
 }
 
-// New fonts
-
-// .p_foot_copyright,
-.p_foot_headtext__xs {
-  @include font(12px, 16px, $col-text-500, $font-secondary);
+.text-xs {
+  @include font(12px, 16px, 500, $col-text-500, $font-secondary);
 }
 
-// .p_foot_list
-.text__sm {
-  @include font (14px, 18px, $col-text-500, $font-secondary);
+.text-sm {
+  @include font (14px, 18px, 500, $col-text-500, $font-secondary);
 }
 
-// .card__summary
-.text__md {
-  @include font(16px, 20px, $col-text-400, $font-secondary);
+.text-md {
+  @include font(16px, 20px, 700, $col-text-400, $font-secondary);
 }
 
-// .p-header-nav
-.text__lg {
-  @include font(17px, 22px, $col-nav-900, $font-secondary);
+.text-lg {
+  @include font(17px, 22px, 400, $col-nav-900, $font-secondary);
 }
 
-// .card__name
-.text__xl {
-  @include font(18px, 22px, $col-black, $font-secondary);
+.text-xl {
+  @include font(18px, 22px, 500, $col-black, $font-secondary);
 }
 
-// .p-header-description
-.text__xxl {
-  @include font(20px, 30px, $col-text-500, $font-secondary);
+.text-xxl {
+  @include font(20px, 30px, 700, $col-text-500, $font-secondary);
 }
 
 .font {
-  &_light {
+  &-light {
     font-weight: 300;
   }
 
-  &_normal {
+  &-normal {
     font-weight: 400;
   }
 
-  &_medium {
+  &-medium {
     font-weight: 500;
   }
 
-  &_semi_bold {
+  &-semi_bold {
     font-weight: 600;
   }
 
-  &_bold {
+  &-bold {
     font-weight: 700;
   }
 }
 
 .color {
-  &_white {
+  &-white {
     color: $col-white;
   }
 
-  &_black {
+  &-black {
     color: $col-black;
   }
 
-  &_dark_blue {
+  &-dark_blue {
     color: $col-text-900;
   }
 
-  &_dark_grey {
+  &-dark_grey {
     color: $col-nav-900;
   }
 
-  &_grey {
+  &-grey {
     color: $col-nav-500;
   }
 
-  &_orange {
+  &-orange {
     color: $col-orange-500;
   }
 

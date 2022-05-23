@@ -39,20 +39,23 @@ a {
   font-family: "Volkhov";
   font-size: 84px;
   line-height: 89px;
+  font-weight: 700;
   color: #181E4B;
 }
 
 .h2 {
   font-family: "Volkhov";
-  font-size: 36px;
-  line-height: 45px;
+  font-size: 50px;
+  line-height: 65px;
+  font-weight: 700;
   color: #14183E;
 }
 
 .h3 {
   font-family: "Poppins";
-  font-size: 26px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
   color: #181E4B;
 }
 
@@ -60,6 +63,7 @@ a {
   font-family: "OpenSans";
   font-size: 20px;
   line-height: 27px;
+  font-weight: 600;
   color: #1E1D4C;
 }
 
@@ -67,83 +71,90 @@ a {
   font-family: "Poppins";
   font-size: 16px;
   line-height: 27px;
+  font-weight: 500;
   color: #5E6282;
 }
 
-.p_foot_headtext__xs {
+.text-xs {
   font-family: "Poppins";
   font-size: 12px;
   line-height: 16px;
+  font-weight: 500;
   color: #5E6282;
 }
 
-.text__sm {
+.text-sm {
   font-family: "Poppins";
   font-size: 14px;
   line-height: 18px;
+  font-weight: 500;
   color: #5E6282;
 }
 
-.text__md {
+.text-md {
   font-family: "Poppins";
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
   color: #84829A;
 }
 
-.text__lg {
+.text-lg {
   font-family: "Poppins";
   font-size: 17px;
   line-height: 22px;
+  font-weight: 400;
   color: #212832;
 }
 
-.text__xl {
+.text-xl {
   font-family: "Poppins";
   font-size: 18px;
   line-height: 22px;
+  font-weight: 500;
   color: #000;
 }
 
-.text__xxl {
+.text-xxl {
   font-family: "Poppins";
   font-size: 20px;
   line-height: 30px;
+  font-weight: 700;
   color: #5E6282;
 }
 
-.font_light {
+.font-light {
   font-weight: 300;
 }
-.font_normal {
+.font-normal {
   font-weight: 400;
 }
-.font_medium {
+.font-medium {
   font-weight: 500;
 }
-.font_semi_bold {
+.font-semi_bold {
   font-weight: 600;
 }
-.font_bold {
+.font-bold {
   font-weight: 700;
 }
 
-.color_white {
+.color-white {
   color: #fff;
 }
-.color_black {
+.color-black {
   color: #000;
 }
-.color_dark_blue {
+.color-dark_blue {
   color: #181E4B;
 }
-.color_dark_grey {
+.color-dark_grey {
   color: #212832;
 }
-.color_grey {
+.color-grey {
   color: #686D77;
 }
-.color_orange {
+.color-orange {
   color: #DF6951;
 }
 
@@ -232,9 +243,11 @@ a {
   src: url(./../fonts/GoogleSans-Medium.ttf);
 }
 .btn__tertiary {
+  font-family: "OpenSans";
   font-size: 10px;
   line-height: 16px;
-  color: "OpenSans";
+  font-weight: 600;
+  color: #fff;
   max-width: 18rem;
   padding: 1.5rem 3rem;
   background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
@@ -259,8 +272,8 @@ a {
   font-family: "GoogleSans";
   font-size: 17px;
   line-height: 21px;
+  font-weight: 500;
   color: #212832;
-  font-weight: 400;
   border: 1px solid #212832;
   border-radius: 5px;
   cursor: pointer;
@@ -272,11 +285,10 @@ a {
   max-width: 17rem;
   padding: 18px 26px;
   background-color: #F1A501;
-  color: #fff;
-  font-weight: 500;
   font-size: 18px;
   line-height: 23px;
-  color: false;
+  font-weight: 500;
+  color: #fff;
   border: none;
 }
 
@@ -523,7 +535,7 @@ a {
 .header__content__wrap {
   max-width: 42.5rem;
 }
-.header__content__wrap .text__md {
+.header__content__wrap .text-xxl {
   font-size: 16px;
   line-height: 25px;
   margin-bottom: 1rem;
@@ -540,7 +552,7 @@ a {
   width: 200px;
   height: 12px;
 }
-.header__content__wrap .text__sm {
+.header__content__wrap .text-sm {
   font-size: 14px;
   line-height: 25px;
   margin-bottom: 3rem;
@@ -582,9 +594,11 @@ a {
   }
   .header__nav__list {
     max-width: 46rem;
+    font-family: "GoogleSans";
     font-size: 17px;
     line-height: 21px;
-    color: "GoogleSans";
+    font-weight: 400;
+    color: #212832;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -592,10 +606,10 @@ a {
     flex-grow: 1;
   }
   .header__nav__list__item {
-    font-family: "GoogleSans";
     font-size: 17px;
     line-height: 22px;
-    color: #212832;
+    font-weight: #212832;
+    color: "GoogleSans";
     font-weight: 400;
     cursor: pointer;
   }
@@ -614,7 +628,7 @@ a {
     width: 185px;
     height: 12px;
   }
-  .header__content__wrap .header__buttons__wrap .text__lg {
+  .header__content__wrap .header__buttons__wrap .text-lg {
     line-height: 26px;
   }
 }
@@ -624,10 +638,10 @@ a {
   }
   .header__nav__list {
     max-width: 46rem;
-    font-family: #212832;
     font-size: 17px;
     line-height: 21px;
-    color: 500;
+    font-weight: 500;
+    color: #212832;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -648,7 +662,7 @@ a {
     padding-bottom: 11.7rem;
     max-width: 45rem;
   }
-  .header__content__wrap .text__md {
+  .header__content__wrap .text-xxl {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 1rem;
@@ -664,7 +678,7 @@ a {
     width: 285px;
     height: 12px;
   }
-  .header__content__wrap .text__sm {
+  .header__content__wrap .text-sm {
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 3rem;
@@ -702,7 +716,7 @@ a {
     padding-bottom: 11.7rem;
     max-width: 63rem;
   }
-  .header__content__wrap .text__md {
+  .header__content__wrap .text-md {
     margin-bottom: 2.4rem;
   }
   .header__content__wrap .h1 {
@@ -716,7 +730,7 @@ a {
     width: 385px;
     height: 12px;
   }
-  .header__content__wrap .text__sm {
+  .header__content__wrap .text-sm {
     margin-bottom: 3.4rem;
   }
   .header__buttons {
@@ -763,7 +777,7 @@ a {
 }
 
 @media screen and (min-width: 900px) {
-  .category__description .text__md-700 {
+  .category__description .text-md {
     font-size: 18px;
     line-height: 27px;
   }
@@ -787,16 +801,6 @@ a {
   justify-content: left;
   align-items: center;
   margin: 2.4rem 0;
-}
-
-.icon {
-  max-width: 48px;
-}
-
-.trip__title {
-  font-size: 14px;
-  line-height: 20px;
-  color: "Poppins";
 }
 
 .line {
