@@ -1,17 +1,16 @@
 .subscribe {
-
   position: relative;
   max-width: 125rem;
-  padding: 9rem 0 2rem 0;
-  @include decore (url('./../img/subscribe/Rectangle\ 164.svg'), cover, no-repeat, right);
+  padding: 9rem 1rem 2rem 1rem;
+  @include decore (url('./../img/subscribe/Rectangle\ 164.svg'), cover, no-repeat);
   margin-bottom: 15rem;
 
 
   &__circles-left {
     position: absolute;
-    top: 11rem;
+    top: 7rem;
     left: -9rem;
-    z-index: 1;
+    z-index: -1;
   }
 
   &__circles-right {
@@ -26,13 +25,12 @@
     position: absolute;
     max-width: 7rem;
     top: -1rem;
-    right: 2rem;
+    right: auto;
   }
 
   &__stars {
     display: none;
     position: absolute;
-    // overflow: visible;
     bottom: 4rem;
     right: -7rem;
   }
@@ -41,35 +39,7 @@
     @include flex(column, space-between, center);
 
     &__text {
-      padding: 0 1rem;
-      max-width: 86rem;
       text-align: center;
-    }
-
-    .btn__tertiary {
-      margin-top: 4rem;
-    }
-  }
-}
-
-@media screen and (min-width: 400px) {
-  .subscribe {
-    &__background {
-      padding: 9rem 1rem;
-    }
-
-    &__circles-left {
-      top: 4rem;
-      left: -9rem;
-    }
-
-    &__info {
-      &__form {
-        .input__contact {
-          width: 30rem;
-
-        }
-      }
     }
   }
 }
@@ -79,47 +49,21 @@
     &__background {
       padding: 10rem 1rem;
     }
-
-    &__circles-left {
-      top: 4rem;
-      left: -9rem;
-    }
-
-    &__info {
-      &__form {
-        .input__contact {
-          width: 40rem;
-
-        }
-      }
-
-      .label {
-        top: 1.7rem;
-        left: 1rem;
-      }
-    }
   }
 }
 
+
 @media screen and (min-width: 900px) {
   .subscribe {
-    .text__xl-600 {
-      font-size: 33px;
-      line-height: 54px;
-    }
-
-    &__background {
-      padding: 10rem 1rem;
-    }
+    padding: 10rem 1rem;
 
     &__mail-icon {
-      top: -1rem;
-      right: -3rem;
+      top: -3rem;
+      right: 1rem;
     }
 
     &__circles-left {
-      top: 8rem;
-      left: -10rem;
+      top: 13rem;
     }
 
     &__circles-right {
@@ -133,42 +77,13 @@
       bottom: -7rem;
       right: -10rem
     }
-
-    &__info {
-      &__form {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-        .input__contact {
-          font-size: 1.7rem;
-          border-radius: 1rem;
-          width: 45rem;
-        }
-
-        .btn__tertiary {
-          margin-top: 0;
-        }
-      }
-
-      .label {
-        top: 2.7rem;
-        left: 1rem;
-      }
-    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .subscribe {
     &__mail-icon {
-      right: -1rem;
-    }
-
-    &__circles-right {
-      display: block;
-      top: 0rem;
-      right: 2rem;
+      right: -2rem;
     }
   }
 }
