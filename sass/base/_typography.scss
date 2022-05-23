@@ -7,7 +7,7 @@
 }
 
 .h3 {
-  @include font(18px, 27px, 600, $col-text-900, $font-secondary);
+  @include font(18px, 27px, 600, $col-text-500, $font-secondary);
 }
 
 .h4 {
