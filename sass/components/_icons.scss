@@ -5,11 +5,12 @@
 
 .instagram {
   fill: $col-white;
- background: $bg-rainbow;
+  background: $bg-rainbow;
 }
 
 .menu {
   width: 35px;
   height: 35px;
-  fill: $col-black;
+  fill: $col-nav-500;
+  cursor: pointer;
 }

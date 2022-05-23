@@ -35,7 +35,7 @@ a {
   text-decoration: none;
 }
 
-h1 {
+.h1 {
   font-family: "Volkhov";
   font-size: 84px;
   line-height: 89px;
@@ -43,23 +43,23 @@ h1 {
   color: #181E4B;
 }
 
-h2 {
+.h2 {
   font-family: "Volkhov";
-  font-size: 36px;
-  line-height: 45px;
+  font-size: 50px;
+  line-height: 65px;
   font-weight: 700;
   color: #14183E;
 }
 
-h5 {
+.h3 {
   font-family: "Poppins";
-  font-size: 16px;
+  font-size: 18px;
   line-height: 27px;
   font-weight: 600;
-  color: #5E6282;
+  color: #181E4B;
 }
 
-h4 {
+.h4 {
   font-family: "OpenSans";
   font-size: 20px;
   line-height: 27px;
@@ -67,15 +67,15 @@ h4 {
   color: #1E1D4C;
 }
 
-h3 {
+.h5 {
   font-family: "Poppins";
-  font-size: 26px;
-  line-height: 36px;
+  font-size: 16px;
+  line-height: 27px;
   font-weight: 500;
-  color: #181E4B;
+  color: #5E6282;
 }
 
-.text__xs {
+.text-xs {
   font-family: "Poppins";
   font-size: 12px;
   line-height: 16px;
@@ -83,7 +83,7 @@ h3 {
   color: #5E6282;
 }
 
-.text__sm {
+.text-sm {
   font-family: "Poppins";
   font-size: 14px;
   line-height: 18px;
@@ -91,55 +91,15 @@ h3 {
   color: #5E6282;
 }
 
-.text__md {
+.text-md {
   font-family: "Poppins";
   font-size: 16px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 700;
   color: #84829A;
 }
 
-.text__md-700 {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #5E6282;
-}
-
-.text__md-400 {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #5E6282;
-}
-
-.text__md-600 {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 27px;
-  font-weight: 600;
-  color: #5E6282;
-}
-
-.text__md-500 {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 500;
-  color: #5E6282;
-}
-
-.text__md-700 {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #181E4B;
-}
-
-.text__lg {
+.text-lg {
   font-family: "Poppins";
   font-size: 17px;
   line-height: 22px;
@@ -147,15 +107,7 @@ h3 {
   color: #212832;
 }
 
-.text__lg-500 {
-  font-family: "Poppins";
-  font-size: 17px;
-  line-height: 22px;
-  font-weight: 400;
-  color: #686D77;
-}
-
-.text__xl {
+.text-xl {
   font-family: "Poppins";
   font-size: 18px;
   line-height: 22px;
@@ -163,36 +115,46 @@ h3 {
   color: #000;
 }
 
-.text__xl-500 {
-  font-family: "Poppins";
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 500;
-  color: #5E6282;
-  letter-spacing: 0.005em;
-}
-
-.text__xl-600 {
-  font-family: "Poppins";
-  font-size: 18px;
-  line-height: 36px;
-  font-weight: 600;
-  color: #5E6282;
-}
-
-.text__xxl {
-  font-family: "Poppins";
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 500;
-  color: #5E6282;
-}
-
-.text__xxl-700 {
+.text-xxl {
   font-family: "Poppins";
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
+  color: #5E6282;
+}
+
+.font-light {
+  font-weight: 300;
+}
+.font-normal {
+  font-weight: 400;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-semi_bold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}
+
+.color-white {
+  color: #fff;
+}
+.color-black {
+  color: #000;
+}
+.color-dark_blue {
+  color: #181E4B;
+}
+.color-dark_grey {
+  color: #212832;
+}
+.color-grey {
+  color: #686D77;
+}
+.color-orange {
   color: #DF6951;
 }
 
@@ -329,7 +291,7 @@ h3 {
     line-height: 2.3rem;
   }
 }
-.btn-header {
+.btn {
   max-width: 10.2rem;
   padding: 0.9rem 2.1rem;
   background-color: transparent;
@@ -338,15 +300,14 @@ h3 {
   line-height: 21px;
   font-weight: 500;
   color: #212832;
-  color: #212832;
   border: 1px solid #212832;
   border-radius: 5px;
   cursor: pointer;
 }
-.btn-header--no-border {
+.btn--no-border {
   border: none;
 }
-.btn-header--yellow {
+.btn--yellow {
   max-width: 17rem;
   padding: 18px 26px;
   background-color: #F1A501;
@@ -438,7 +399,8 @@ h3 {
 .menu {
   width: 35px;
   height: 35px;
-  fill: #000;
+  fill: #686D77;
+  cursor: pointer;
 }
 
 .input {
@@ -626,16 +588,10 @@ h3 {
 .header__nav__login {
   display: none;
 }
-.header__nav .menu {
-  width: 35px;
-  height: 35px;
-  fill: #686D77;
-  cursor: pointer;
-}
 .header__content__wrap {
   max-width: 42.5rem;
 }
-.header__content__wrap .p-header-heading {
+.header__content__wrap .text-xxl {
   font-size: 16px;
   line-height: 25px;
   margin-bottom: 1rem;
@@ -652,8 +608,9 @@ h3 {
   width: 200px;
   height: 12px;
 }
-.header__content__wrap .p-header-description {
+.header__content__wrap .text-sm {
   font-size: 14px;
+  line-height: 25px;
   margin-bottom: 3rem;
 }
 .header__buttons {
@@ -696,13 +653,21 @@ h3 {
     font-family: "GoogleSans";
     font-size: 17px;
     line-height: 21px;
-    font-weight: 500;
+    font-weight: 400;
     color: #212832;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
+  }
+  .header__nav__list__item {
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: #212832;
+    color: "GoogleSans";
+    font-weight: 400;
+    cursor: pointer;
   }
   .header__content {
     background-image: url("./../img/header/header-Image.svg");
@@ -718,6 +683,9 @@ h3 {
     left: -20px;
     width: 185px;
     height: 12px;
+  }
+  .header__content__wrap .header__buttons__wrap .text-lg {
+    line-height: 26px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -750,7 +718,7 @@ h3 {
     padding-bottom: 11.7rem;
     max-width: 45rem;
   }
-  .header__content__wrap .p-header-heading {
+  .header__content__wrap .text-xxl {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 1rem;
@@ -766,8 +734,9 @@ h3 {
     width: 285px;
     height: 12px;
   }
-  .header__content__wrap .p-header-description {
+  .header__content__wrap .text-sm {
     font-size: 16px;
+    line-height: 30px;
     margin-bottom: 3rem;
     max-width: 47.7rem;
   }
@@ -803,7 +772,7 @@ h3 {
     padding-bottom: 11.7rem;
     max-width: 63rem;
   }
-  .header__content__wrap .p-header-heading {
+  .header__content__wrap .text-md {
     margin-bottom: 2.4rem;
   }
   .header__content__wrap .h1 {
@@ -817,7 +786,7 @@ h3 {
     width: 385px;
     height: 12px;
   }
-  .header__content__wrap .p-header-description {
+  .header__content__wrap .text-sm {
     margin-bottom: 3.4rem;
   }
   .header__buttons {
@@ -871,7 +840,7 @@ main {
 }
 
 @media screen and (min-width: 1100px) {
-  .category__description .text__md-700 {
+  .category__description .text__md {
     font-size: 18px;
     line-height: 27px;
   }
@@ -896,18 +865,6 @@ main {
   justify-content: left;
   align-items: center;
   margin: 2.4rem 0;
-}
-
-.icon {
-  max-width: 48px;
-}
-
-.trip__title {
-  font-family: "Poppins";
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 500;
-  color: #84829A;
 }
 
 .line {

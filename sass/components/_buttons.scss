@@ -30,12 +30,11 @@
   }
 }
 
-.btn-header {
+.btn {
   max-width: 10.2rem;
   padding: 0.9rem 2.1rem;
   background-color: transparent;
   @include font(17px, 21px, 500, $col-nav-900, $font-quaternary);
-  color: $col-nav-900;
   border: 1px solid $col-nav-900;
   border-radius: 5px;
   cursor: pointer;
