@@ -74,7 +74,7 @@
             }
 
             &__item {
-                @include font(17px, 22px, $col-nav-900, $font-quaternary);
+                @include font(17px, 22px, 400, $col-nav-900, $font-quaternary);
                 cursor: pointer;
             }
         }
