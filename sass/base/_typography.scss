@@ -1,49 +1,45 @@
 .h1 {
-  @include font(84px, 89px, $col-text-900, $font-tertiary);
+  @include font(84px, 89px, 700, $col-text-900, $font-tertiary);
 }
 
 .h2 {
-  @include font(50px, 65px, $col-text-800, $font-tertiary);
+  @include font(50px, 65px, 700, $col-text-800, $font-tertiary);
 }
 
 .h3 {
-  @include font(18px, 27px, $col-text-500, $font-secondary);
+  @include font(18px, 27px, 600, $col-text-500, $font-secondary);
 }
 
 .h4 {
-  @include font(20px, 27px, $col-text-700, $font-primary);
+  @include font(20px, 27px, 600, $col-text-700, $font-primary);
 }
 
 .h5 {
-  @include font(16px, 27px, $col-text-500, $font-secondary);
+  @include font(16px, 27px, 500, $col-text-500, $font-secondary);
 }
 
 .text-xs {
-  @include font(12px, 16px, $col-text-500, $font-secondary);
+  @include font(12px, 16px, 500, $col-text-500, $font-secondary);
 }
 
 .text-sm {
-  @include font (14px, 18px, $col-text-500, $font-secondary);
+  @include font (14px, 18px, 500, $col-text-500, $font-secondary);
 }
 
 .text-md {
-  @include font(16px, 20px, $col-text-400, $font-secondary);
+  @include font(16px, 20px, 700, $col-text-400, $font-secondary);
 }
 
 .text-lg {
-  @include font(17px, 22px, $col-nav-900, $font-secondary);
+  @include font(17px, 22px, 400, $col-nav-900, $font-secondary);
 }
 
 .text-xl {
-  @include font(18px, 22px, $col-black, $font-secondary);
+  @include font(18px, 22px, 500, $col-black, $font-secondary);
 }
 
 .text-xxl {
-  @include font(20px, 30px, $col-text-500, $font-secondary);
-}
-
-.text-xxxl {
-  @include font(20px, 43px, $col-text-500, $font-secondary);
+  @include font(20px, 30px, 700, $col-text-500, $font-secondary);
 }
 
 .font {
@@ -59,7 +55,7 @@
     font-weight: 500;
   }
 
-  &-semi_bold {
+  &-semi-bold {
     font-weight: 600;
   }
 
@@ -77,11 +73,11 @@
     color: $col-black;
   }
 
-  &-dark_blue {
+  &-dark-blue {
     color: $col-text-900;
   }
 
-  &-dark_grey {
+  &-dark-grey {
     color: $col-nav-900;
   }
 
@@ -92,7 +88,6 @@
   &-orange {
     color: $col-orange-500;
   }
-
 }
 
 
@@ -105,7 +100,7 @@
 
 @media screen and (min-width: 600px) {
   .text-xxxl {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 46px;
   }
 }

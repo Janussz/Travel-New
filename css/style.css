@@ -36,87 +36,91 @@ a {
 }
 
 .h1 {
+  font-family: "Volkhov";
   font-size: 84px;
   line-height: 89px;
-  font-weight: #181E4B;
-  color: "Volkhov";
+  font-weight: 700;
+  color: #181E4B;
 }
 
 .h2 {
+  font-family: "Volkhov";
   font-size: 50px;
   line-height: 65px;
-  font-weight: #14183E;
-  color: "Volkhov";
+  font-weight: 700;
+  color: #14183E;
 }
 
 .h3 {
+  font-family: "Poppins";
   font-size: 18px;
   line-height: 27px;
-  font-weight: #5E6282;
-  color: "Poppins";
+  font-weight: 600;
+  color: #5E6282;
 }
 
 .h4 {
+  font-family: "OpenSans";
   font-size: 20px;
   line-height: 27px;
-  font-weight: #1E1D4C;
-  color: "OpenSans";
+  font-weight: 600;
+  color: #1E1D4C;
 }
 
 .h5 {
+  font-family: "Poppins";
   font-size: 16px;
   line-height: 27px;
-  font-weight: #5E6282;
-  color: "Poppins";
+  font-weight: 500;
+  color: #5E6282;
 }
 
 .text-xs {
+  font-family: "Poppins";
   font-size: 12px;
   line-height: 16px;
-  font-weight: #5E6282;
-  color: "Poppins";
+  font-weight: 500;
+  color: #5E6282;
 }
 
 .text-sm {
+  font-family: "Poppins";
   font-size: 14px;
   line-height: 18px;
-  font-weight: #5E6282;
-  color: "Poppins";
+  font-weight: 500;
+  color: #5E6282;
 }
 
 .text-md {
+  font-family: "Poppins";
   font-size: 16px;
   line-height: 20px;
-  font-weight: #84829A;
-  color: "Poppins";
+  font-weight: 700;
+  color: #84829A;
 }
 
 .text-lg {
+  font-family: "Poppins";
   font-size: 17px;
   line-height: 22px;
-  font-weight: #212832;
-  color: "Poppins";
+  font-weight: 400;
+  color: #212832;
 }
 
 .text-xl {
+  font-family: "Poppins";
   font-size: 18px;
   line-height: 22px;
-  font-weight: #000;
-  color: "Poppins";
+  font-weight: 500;
+  color: #000;
 }
 
 .text-xxl {
+  font-family: "Poppins";
   font-size: 20px;
   line-height: 30px;
-  font-weight: #5E6282;
-  color: "Poppins";
-}
-
-.text-xxxl {
-  font-size: 20px;
-  line-height: 43px;
-  font-weight: #5E6282;
-  color: "Poppins";
+  font-weight: 700;
+  color: #5E6282;
 }
 
 .font-light {
@@ -128,7 +132,7 @@ a {
 .font-medium {
   font-weight: 500;
 }
-.font-semi_bold {
+.font-semi-bold {
   font-weight: 600;
 }
 .font-bold {
@@ -141,10 +145,10 @@ a {
 .color-black {
   color: #000;
 }
-.color-dark_blue {
+.color-dark-blue {
   color: #181E4B;
 }
-.color-dark_grey {
+.color-dark-grey {
   color: #212832;
 }
 .color-grey {
@@ -162,7 +166,7 @@ a {
 }
 @media screen and (min-width: 600px) {
   .text-xxxl {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 46px;
   }
 }
@@ -782,10 +786,11 @@ a {
     flex-grow: 1;
   }
   .header__nav__item {
+    font-family: "GoogleSans";
     font-size: 17px;
     line-height: 22px;
-    font-weight: #212832;
-    color: "GoogleSans";
+    font-weight: 400;
+    color: #212832;
     cursor: pointer;
   }
   .header__content {
