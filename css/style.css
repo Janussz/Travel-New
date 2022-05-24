@@ -44,12 +44,19 @@ a {
 
 .h2 {
   font-family: "Volkhov";
+<<<<<<< HEAD
   font-size: 36px;
   line-height: 45px;
+=======
+  font-size: 50px;
+  line-height: 65px;
+  font-weight: 700;
+>>>>>>> master
   color: #14183E;
 }
 
 .h3 {
+<<<<<<< HEAD
   font-family: "Poppins";
   font-size: 26px;
   line-height: 36px;
@@ -71,40 +78,79 @@ a {
 }
 
 .p_foot_headtext__xs {
+=======
+  font-family: "Poppins";
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  color: #5E6282;
+}
+
+.h4 {
+  font-family: "OpenSans";
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 600;
+  color: #1E1D4C;
+}
+
+.h5 {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 500;
+  color: #5E6282;
+}
+
+.text-xs {
+>>>>>>> master
   font-family: "Poppins";
   font-size: 12px;
   line-height: 16px;
   color: #5E6282;
 }
 
-.text__sm {
+.text-sm {
   font-family: "Poppins";
   font-size: 14px;
   line-height: 18px;
   color: #5E6282;
 }
 
-.text__md {
+.text-md {
   font-family: "Poppins";
   font-size: 16px;
   line-height: 20px;
+<<<<<<< HEAD
   color: #84829A;
 }
 
 .text__lg {
+=======
+  font-weight: 700;
+  color: #84829A;
+}
+
+.text-lg {
+>>>>>>> master
   font-family: "Poppins";
   font-size: 17px;
   line-height: 22px;
   color: #212832;
 }
 
+<<<<<<< HEAD
 .text__xl {
+=======
+.text-xl {
+>>>>>>> master
   font-family: "Poppins";
   font-size: 18px;
   line-height: 22px;
   color: #000;
 }
 
+<<<<<<< HEAD
 .text__xxl {
   font-family: "Poppins";
   font-size: 20px;
@@ -147,9 +193,69 @@ a {
   color: #686D77;
 }
 .color_orange {
+=======
+.text-xxl {
+  font-family: "Poppins";
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #5E6282;
+}
+
+.font-light {
+  font-weight: 300;
+}
+.font-normal {
+  font-weight: 400;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-semi_bold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}
+
+.color-white {
+  color: #fff;
+}
+.color-black {
+  color: #000;
+}
+.color-dark_blue {
+  color: #181E4B;
+}
+.color-dark_grey {
+  color: #212832;
+}
+.color-grey {
+  color: #686D77;
+}
+.color-orange {
+>>>>>>> master
   color: #DF6951;
 }
 
+@media screen and (min-width: 400px) {
+  .text__xl-600 {
+    font-size: 20px;
+    line-height: 43px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .text__xl-600 {
+    font-size: 26px;
+    line-height: 46px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .text__xl-600 {
+    font-size: 33px;
+    line-height: 54px;
+  }
+}
 @font-face {
   font-family: "OpenSans";
   font-style: normal;
@@ -240,23 +346,31 @@ a {
   line-height: 16px;
   color: #fff;
   max-width: 18rem;
+  margin-top: 4rem;
   padding: 1.5rem 3rem;
   background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
   border-radius: 10px;
   border: none;
   font-size: 1.6rem;
   line-height: 1.8rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;
+}
+
+.btn__tertiary:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 @media screen and (min-width: 900px) {
   .btn__tertiary {
+    margin-top: 0;
+    padding: 2rem 5rem;
     font-size: 1.7rem;
     line-height: 2.3rem;
-    padding: 2rem 5rem;
   }
 }
-.btn-header {
+.btn {
   max-width: 10.2rem;
   padding: 0.9rem 2.1rem;
   background-color: transparent;
@@ -264,15 +378,14 @@ a {
   font-size: 17px;
   line-height: 21px;
   color: #212832;
-  color: #212832;
   border: 1px solid #212832;
   border-radius: 5px;
   cursor: pointer;
 }
-.btn-header--no-border {
+.btn--no-border {
   border: none;
 }
-.btn-header--yellow {
+.btn--yellow {
   max-width: 17rem;
   padding: 18px 26px;
   background-color: #F1A501;
@@ -317,6 +430,8 @@ a {
   padding: 2rem;
   text-align: center;
   cursor: pointer;
+  background-color: #fff;
+  border-radius: 36px;
 }
 .bg__box h4 {
   margin-top: 2.9rem;
@@ -326,13 +441,11 @@ a {
 }
 .bg__box::before {
   content: "";
-  width: 50%;
-  height: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 30px 0px 10px;
+  background-color: #DF6951;
   position: absolute;
-  background-image: url("./../img/services/Rectangle 157.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
   top: 10.5rem;
   left: 0rem;
   z-index: -1;
@@ -344,10 +457,11 @@ a {
   background: #fff;
   box-shadow: 0px 36px 40px -18px rgba(66, 68, 90, 0.37);
   border-radius: 36px;
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.23);
 }
 .bg__box:hover::before {
   opacity: 1;
-  transform: translate(-4rem, 11rem);
+  transform: translate(-4rem, 14rem);
 }
 
 .social-icon {
@@ -363,7 +477,8 @@ a {
 .menu {
   width: 35px;
   height: 35px;
-  fill: #000;
+  fill: #686D77;
+  cursor: pointer;
 }
 
 .arrow {
@@ -373,34 +488,37 @@ a {
 }
 
 .input {
-  margin: 0 auto;
-  max-width: 75rem;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 6rem;
+  margin: 6rem 0;
+  width: 25rem;
 }
-.input .input__contact {
-  width: 22rem;
+
+.input__contact {
+  width: 100%;
+  max-width: 43rem;
+  padding: 1.5rem 3rem;
   background: #fff;
-  padding: 2rem;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 10px;
+  margin-left: 2.4rem;
 }
-.input .input__contact::placeholder {
-  padding-left: 4rem;
-  color: #39425D;
+
+.input__contact::placeholder {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
 }
-.input .label {
+
+.label {
   position: absolute;
-  top: 1.2rem;
-  left: 1rem;
+  top: 1.4rem;
+  left: 2rem;
   cursor: text;
 }
-.input .label img {
+.label img {
   color: #39425D;
   width: 15px;
 }
@@ -421,6 +539,32 @@ a {
   background: rgba(111, 243, 111, 0.4);
 }
 
+@media screen and (min-width: 900px) {
+  .input {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 65rem;
+  }
+
+  .input__contact {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+
+  .input__contact::placeholder {
+    font-size: 1.8rem;
+    padding-left: 1rem;
+  }
+
+  .label {
+    top: 2rem;
+    left: 0.7rem;
+  }
+  .label img {
+    width: 18px;
+  }
+}
 .blot {
   background-image: url("./../img/header/Decore.svg");
   background-size: contain;
@@ -689,16 +833,10 @@ a {
 .header__nav__login {
   display: none;
 }
-.header__nav .menu {
-  width: 35px;
-  height: 35px;
-  fill: #686D77;
-  cursor: pointer;
-}
 .header__content__wrap {
   max-width: 42.5rem;
 }
-.header__content__wrap .p-header-heading {
+.header__content__wrap .text-xxl {
   font-size: 16px;
   line-height: 25px;
   margin-bottom: 1rem;
@@ -715,8 +853,9 @@ a {
   width: 200px;
   height: 12px;
 }
-.header__content__wrap .p-header-description {
+.header__content__wrap .text-sm {
   font-size: 14px;
+  line-height: 25px;
   margin-bottom: 3rem;
 }
 .header__buttons {
@@ -756,15 +895,26 @@ a {
   }
   .header__nav__list {
     max-width: 46rem;
+<<<<<<< HEAD
     font-family: "GoogleSans";
     font-size: 17px;
     line-height: 21px;
     color: #212832;
+=======
+>>>>>>> master
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
+  }
+  .header__nav__item {
+    font-family: "GoogleSans";
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #212832;
+    cursor: pointer;
   }
   .header__content {
     background-image: url("./../img/header/header-Image.svg");
@@ -780,6 +930,9 @@ a {
     left: -20px;
     width: 185px;
     height: 12px;
+  }
+  .header__content__wrap .header__buttons__wrap .text-lg {
+    line-height: 26px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -812,7 +965,7 @@ a {
     padding-bottom: 11.7rem;
     max-width: 45rem;
   }
-  .header__content__wrap .p-header-heading {
+  .header__content__wrap .text-xxl {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 1rem;
@@ -828,8 +981,9 @@ a {
     width: 285px;
     height: 12px;
   }
-  .header__content__wrap .p-header-description {
+  .header__content__wrap .text-sm {
     font-size: 16px;
+    line-height: 30px;
     margin-bottom: 3rem;
     max-width: 47.7rem;
   }
@@ -865,7 +1019,7 @@ a {
     padding-bottom: 11.7rem;
     max-width: 63rem;
   }
-  .header__content__wrap .p-header-heading {
+  .header__content__wrap .text-md {
     margin-bottom: 2.4rem;
   }
   .header__content__wrap .h1 {
@@ -879,7 +1033,7 @@ a {
     width: 385px;
     height: 12px;
   }
-  .header__content__wrap .p-header-description {
+  .header__content__wrap .text-sm {
     margin-bottom: 3.4rem;
   }
   .header__buttons {
@@ -888,6 +1042,10 @@ a {
     align-items: center;
   }
 }
+main {
+  overflow: hidden;
+}
+
 .category {
   margin-bottom: 6rem;
 }
@@ -927,17 +1085,26 @@ a {
 .category__services__list__item img {
   width: 130px;
 }
+.category__services__list__item .microphone {
+  width: 100px;
+}
 
+<<<<<<< HEAD
 @media screen and (min-width: 900px) {
   .category__description__text--left {
     text-align: left;
     margin: 0;
   }
   .category__description .text__md-700 {
+=======
+@media screen and (min-width: 1100px) {
+  .category__description .text-md {
+>>>>>>> master
     font-size: 18px;
     line-height: 27px;
   }
   .category__description__header {
+    max-width: 86rem;
     font-size: 50px;
     line-height: 65px;
   }
@@ -961,6 +1128,7 @@ a {
   align-items: center;
   margin: 2.4rem 0;
 }
+<<<<<<< HEAD
 .container__steps .step__icon {
   max-width: 48px;
   margin-right: 2rem;
@@ -981,21 +1149,38 @@ a {
     align-self: left;
   }
 }
+=======
+
+.line {
+  width: 160px;
+  border: 2px solid black;
+  opacity: 30%;
+  border-radius: 5px;
+}
+.line__blue {
+  width: 30%;
+  position: absolute;
+  top: 8.2rem;
+  opacity: 100%;
+  border: 2px solid #8A79DF;
+}
+
+>>>>>>> master
 .subscribe {
   position: relative;
   max-width: 125rem;
-  padding: 9rem 0 2rem 0;
+  padding: 9rem 1rem 2rem 1rem;
   background-image: url("./../img/subscribe/Rectangle 164.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: false;
   margin-bottom: 15rem;
 }
 .subscribe__circles-left {
   position: absolute;
-  top: 11rem;
+  top: 7rem;
   left: -9rem;
-  z-index: 1;
+  z-index: -1;
 }
 .subscribe__circles-right {
   display: none;
@@ -1008,7 +1193,7 @@ a {
   position: absolute;
   max-width: 7rem;
   top: -1rem;
-  right: 2rem;
+  right: auto;
 }
 .subscribe__stars {
   display: none;
@@ -1023,57 +1208,24 @@ a {
   align-items: center;
 }
 .subscribe__info__text {
-  padding: 0 1rem;
-  max-width: 86rem;
   text-align: center;
 }
-.subscribe__info .btn__tertiary {
-  margin-top: 4rem;
-}
 
-@media screen and (min-width: 400px) {
-  .subscribe__background {
-    padding: 9rem 1rem;
-  }
-  .subscribe__circles-left {
-    top: 4rem;
-    left: -9rem;
-  }
-  .subscribe__info__form .input__contact {
-    width: 30rem;
-  }
-}
 @media screen and (min-width: 600px) {
   .subscribe__background {
     padding: 10rem 1rem;
   }
-  .subscribe__circles-left {
-    top: 4rem;
-    left: -9rem;
-  }
-  .subscribe__info__form .input__contact {
-    width: 40rem;
-  }
-  .subscribe__info .label {
-    top: 1.7rem;
-    left: 1rem;
-  }
 }
 @media screen and (min-width: 900px) {
-  .subscribe .text__xl-600 {
-    font-size: 33px;
-    line-height: 54px;
-  }
-  .subscribe__background {
+  .subscribe {
     padding: 10rem 1rem;
   }
   .subscribe__mail-icon {
-    top: -1rem;
-    right: -3rem;
+    top: -3rem;
+    right: 1rem;
   }
   .subscribe__circles-left {
-    top: 8rem;
-    left: -10rem;
+    top: 13rem;
   }
   .subscribe__circles-right {
     display: block;
@@ -1085,32 +1237,10 @@ a {
     bottom: -7rem;
     right: -10rem;
   }
-  .subscribe__info__form {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .subscribe__info__form .input__contact {
-    font-size: 1.7rem;
-    border-radius: 1rem;
-    width: 45rem;
-  }
-  .subscribe__info__form .btn__tertiary {
-    margin-top: 0;
-  }
-  .subscribe__info .label {
-    top: 2.7rem;
-    left: 1rem;
-  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe__mail-icon {
-    right: -1rem;
-  }
-  .subscribe__circles-right {
-    display: block;
-    top: 0rem;
-    right: 2rem;
+    right: -2rem;
   }
 }
 .footer {
@@ -1144,7 +1274,7 @@ a {
   margin-bottom: 4rem;
 }
 .footer__social {
-  margin: 0 auto;
+  margin: 2rem auto;
   cursor: pointer;
 }
 .footer__social__wrapper {
@@ -1167,10 +1297,11 @@ a {
   cursor: pointer;
 }
 .footer__social__text {
-  margin: 2rem 0 2rem 0;
+  text-align: center;
+  margin: 3rem 0 3rem 0;
 }
 .footer__copyright {
-  width: 21rem;
+  width: 18rem;
   margin: 3rem auto;
 }
 

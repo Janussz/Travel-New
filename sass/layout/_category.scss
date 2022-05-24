@@ -1,6 +1,7 @@
 .category {
   margin-bottom: 6rem;
 
+
   &__description {
     @include flex(row, space-between, center);
     margin: 0 auto;
@@ -36,14 +37,20 @@
         img {
           width: 130px;
         }
+
+        .microphone {
+          width: 100px;
+        }
       }
+
     }
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   .category {
     &__description {
+<<<<<<< HEAD
       &__text {
         &--left {
           text-align: left;
@@ -52,11 +59,15 @@
       }
 
       .text__md-700 {
+=======
+      .text-md {
+>>>>>>> master
         font-size: 18px;
         line-height: 27px;
       }
 
       &__header {
+        max-width: 86rem;
         font-size: 50px;
         line-height: 65px;
       }
