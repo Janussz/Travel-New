@@ -36,87 +36,87 @@ a {
 }
 
 .h1 {
-  font-family: "Volkhov";
   font-size: 84px;
   line-height: 89px;
-  color: #181E4B;
+  font-weight: #181E4B;
+  color: "Volkhov";
 }
 
 .h2 {
-  font-family: "Volkhov";
   font-size: 50px;
   line-height: 65px;
-  color: #14183E;
+  font-weight: #14183E;
+  color: "Volkhov";
 }
 
 .h3 {
-  font-family: "Poppins";
   font-size: 18px;
   line-height: 27px;
-  color: #5E6282;
+  font-weight: #5E6282;
+  color: "Poppins";
 }
 
 .h4 {
-  font-family: "OpenSans";
   font-size: 20px;
   line-height: 27px;
-  color: #1E1D4C;
+  font-weight: #1E1D4C;
+  color: "OpenSans";
 }
 
 .h5 {
-  font-family: "Poppins";
   font-size: 16px;
   line-height: 27px;
-  color: #5E6282;
+  font-weight: #5E6282;
+  color: "Poppins";
 }
 
 .text-xs {
-  font-family: "Poppins";
   font-size: 12px;
   line-height: 16px;
-  color: #5E6282;
+  font-weight: #5E6282;
+  color: "Poppins";
 }
 
 .text-sm {
-  font-family: "Poppins";
   font-size: 14px;
   line-height: 18px;
-  color: #5E6282;
+  font-weight: #5E6282;
+  color: "Poppins";
 }
 
 .text-md {
-  font-family: "Poppins";
   font-size: 16px;
   line-height: 20px;
-  color: #84829A;
+  font-weight: #84829A;
+  color: "Poppins";
 }
 
 .text-lg {
-  font-family: "Poppins";
   font-size: 17px;
   line-height: 22px;
-  color: #212832;
+  font-weight: #212832;
+  color: "Poppins";
 }
 
 .text-xl {
-  font-family: "Poppins";
   font-size: 18px;
   line-height: 22px;
-  color: #000;
+  font-weight: #000;
+  color: "Poppins";
 }
 
 .text-xxl {
-  font-family: "Poppins";
   font-size: 20px;
   line-height: 30px;
-  color: #5E6282;
+  font-weight: #5E6282;
+  color: "Poppins";
 }
 
 .text-xxxl {
-  font-family: "Poppins";
   font-size: 20px;
   line-height: 43px;
-  color: #5E6282;
+  font-weight: #5E6282;
+  color: "Poppins";
 }
 
 .font-light {
@@ -267,10 +267,10 @@ a {
   src: url(./../fonts/GoogleSans-Medium.ttf);
 }
 .btn__tertiary {
-  font-family: "OpenSans";
   font-size: 10px;
   line-height: 16px;
-  color: #fff;
+  font-weight: #fff;
+  color: "OpenSans";
   max-width: 18rem;
   margin-top: 4rem;
   padding: 1.5rem 3rem;
@@ -303,14 +303,21 @@ a {
   font-family: "GoogleSans";
   font-size: 17px;
   line-height: 21px;
+  font-weight: 400;
   color: #212832;
   color: #212832;
   border: 1px solid #212832;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.btn:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .btn--no-border {
   border: none;
+  box-shadow: none;
 }
 .btn--yellow {
   max-width: 17rem;
@@ -318,7 +325,9 @@ a {
   background-color: #F1A501;
   font-size: 18px;
   line-height: 23px;
+  font-weight: 400;
   color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border: none;
 }
 
@@ -708,6 +717,7 @@ a {
 }
 .header__content__wrap .text-xxl {
   font-size: 16px;
+  font-weight: 700;
   line-height: 25px;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -772,10 +782,10 @@ a {
     flex-grow: 1;
   }
   .header__nav__item {
-    font-family: "GoogleSans";
     font-size: 17px;
     line-height: 22px;
-    color: #212832;
+    font-weight: #212832;
+    color: "GoogleSans";
     cursor: pointer;
   }
   .header__content {
@@ -805,6 +815,7 @@ a {
     max-width: 46rem;
     font-size: 17px;
     line-height: 21px;
+    font-weight: 400;
     color: #212832;
     display: flex;
     flex-direction: row;
@@ -972,8 +983,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10rem;
-  margin-bottom: 10rem;
+  padding-top: 12rem;
+  margin-bottom: 15rem;
 }
 .selling__heading {
   display: flex;
@@ -1076,8 +1087,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10rem;
-  margin-bottom: 10rem;
+  padding-top: 12rem;
+  margin-bottom: 14rem;
 }
 .brands__list {
   display: grid;
