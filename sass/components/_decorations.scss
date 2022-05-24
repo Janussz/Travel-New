@@ -37,10 +37,4 @@
         height: 252px;
         @include decore(url(./../img/destination/Decore.svg), contain, no-repeat);
     }
-
-    &:hover {
-        .circles::before {
-            z-index: -3;
-        }
-    }
 }
