@@ -23,3 +23,18 @@
 
     }
 }
+
+.circles {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 47px;
+        right: -62px;
+        z-index: -1;
+        width: 96px;
+        height: 252px;
+        @include decore(url(./../img/destination/Decore.svg), contain, no-repeat);
+    }
+}

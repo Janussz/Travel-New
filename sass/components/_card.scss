@@ -62,3 +62,36 @@
 }
 
 @media (min-width: 1024px) {}
+
+.destination {
+    max-width: 31.4rem;
+    max-height: 45.7rem;
+    border-radius: 24px;
+    background-color: $col-white;
+    box-shadow: $bs-card;
+    transition: box-shadow .5s, transform .5s;
+
+    &:hover {
+        box-shadow: $bs-card-h;
+        transform: translateY(-10px);
+    }
+
+    &__img {
+        max-height: 32.7rem;
+        overflow: hidden;
+    }
+
+    &__text {
+        @include flex(column, space-between, space-between);
+        @include gap(2rem);
+        padding: 2.7rem 2rem 4rem;
+        @include font(16px, 20px, 500, $col-text-500, $font-secondary);
+
+
+        &__heading {
+            @include flex(row, space-between, space-between);
+            @include font(18px, 22px, 500, $col-text-500, $font-secondary);
+        }
+    }
+
+}
