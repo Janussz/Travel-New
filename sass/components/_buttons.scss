@@ -30,7 +30,7 @@
   }
 }
 
-.btn-header {
+.btn {
   max-width: 10.2rem;
   padding: 0.9rem 2.1rem;
   background-color: transparent;
@@ -48,7 +48,7 @@
     max-width: 17rem;
     padding: 18px 26px;
     background-color: $col-yellow-500;
-    @include font(18px, 23px, $col-white);
+    @include font(18px, 23px, $col-white, );
     border: none;
   }
 }
