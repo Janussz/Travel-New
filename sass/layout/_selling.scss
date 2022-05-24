@@ -1,0 +1,57 @@
+.selling {
+    @include flex(column);
+    padding-top: 10rem;
+    margin-bottom: 10rem;
+
+    &__heading {
+        @include flex(column);
+        margin-bottom: 6rem;
+        @include gap (0.8rem);
+
+        .h2 {
+            font-size: 30px
+        }
+    }
+
+    &__content {
+        &__list {
+            @include flex(column);
+            @include gap(3.5rem)
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .selling {
+
+        &__heading {
+            @include flex(column);
+            margin-bottom: 6rem;
+            @include gap (0.8rem);
+
+            .h2 {
+                font-size: 50px
+            }
+        }
+
+        &__content {
+            &__list {
+                @include flex(row);
+                @include gap(false, 1.5rem, 1200)
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .selling {
+        padding-top: 12rem;
+        margin-bottom: 18rem;
+
+        &__content {
+            &__list {
+                @include gap(false, 3.5rem, 1200)
+            }
+        }
+    }
+}
