@@ -1,0 +1,38 @@
+.brands {
+    @include flex(column);
+    padding-top: 10rem;
+    margin-bottom: 10rem;
+
+    &__list {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .brands {
+
+        &__list {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .brands {
+
+        &__list {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .brands {
+
+        &__list {
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+        }
+    }
+}
