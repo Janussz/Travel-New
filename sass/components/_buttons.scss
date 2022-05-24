@@ -1,30 +1,40 @@
 .btn__tertiary {
   @include font(10px, 16px, 600, $col-white, $font-primary);
   max-width: 18rem;
+  margin-top: 4rem;
   padding: 1.5rem 3rem;
   background: $bg-btn-tertiary;
   border-radius: 10px;
   border: none;
   font-size: 1.6rem;
   line-height: 1.8rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   cursor: pointer;
 }
+
+.btn__tertiary:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
 
 
 @media screen and (min-width: 900px) {
   .btn__tertiary {
+    margin-top: 0;
+    padding: 2rem 5rem;
     font-size: 1.7rem;
     line-height: 2.3rem;
-    padding: 2rem 5rem;
+
   }
 }
 
-.btn-header {
+.btn {
   max-width: 10.2rem;
   padding: 0.9rem 2.1rem;
   background-color: transparent;
   @include font(17px, 21px, 500, $col-nav-900, $font-quaternary);
-  color: $col-nav-900;
   border: 1px solid $col-nav-900;
   border-radius: 5px;
   cursor: pointer;
