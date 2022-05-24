@@ -166,7 +166,7 @@ a {
 }
 @media screen and (min-width: 600px) {
   .text-xxxl {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 46px;
   }
 }
@@ -622,7 +622,6 @@ a {
 
 .destination {
   max-width: 31.4rem;
-  max-height: 45.7rem;
   border-radius: 24px;
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -674,15 +673,17 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 24.1rem;
+  padding: 0 2rem;
   height: 8.6rem;
   overflow: hidden;
   border-radius: 10px;
-  transition: box-shadow 0.5s, transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s, filter 0.5s;
+  filter: grayscale(1);
 }
 .brand:hover {
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
   transform: translateY(-5px);
+  filter: grayscale(0);
 }
 
 .line {
@@ -1096,26 +1097,13 @@ main {
   margin-bottom: 14rem;
 }
 .brands__list {
+  width: 100%;
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
+  justify-items: center;
 }
 
-@media screen and (min-width: 600px) {
-  .brands__list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-@media screen and (min-width: 900px) {
-  .brands__list {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-@media screen and (min-width: 1200px) {
-  .brands__list {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-}
 .subscribe {
   position: relative;
   max-width: 125rem;

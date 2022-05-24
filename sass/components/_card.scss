@@ -61,11 +61,8 @@
     }
 }
 
-@media (min-width: 1024px) {}
-
 .destination {
     max-width: 31.4rem;
-    max-height: 45.7rem;
     border-radius: 24px;
     background-color: $col-white;
     box-shadow: $bs-card;
@@ -97,14 +94,16 @@
 
 .brand {
     @include flex;
-    width: 24.1rem;
+    padding: 0 2rem;
     height: 8.6rem;
     overflow: hidden;
     border-radius: 10px;
-    transition: box-shadow .5s, transform .5s;
+    transition: box-shadow .5s, transform .5s, filter .5s;
+    filter: grayscale(1);
 
     &:hover {
         box-shadow: $bs-card-brand;
         transform: translateY(-5px);
+        filter: grayscale(0);
     }
 }
