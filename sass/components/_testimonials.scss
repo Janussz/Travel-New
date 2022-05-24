@@ -1,5 +1,6 @@
 .testimonials {
-    flex-direction: space-evenly;
+    @include flex(column, space-evenly, center);
+
 
     .dots {
         margin: 5rem 0 5rem 0;
@@ -10,6 +11,10 @@
     }
 
     .box {
+        &__title {
+            max-width: 40.9rem;
+        }
+
         .card {
             padding: 3rem;
             text-align: center;
@@ -46,7 +51,6 @@
 
 @media screen and (min-width: 900px) {
     .testimonials {
-        padding-left: 8.5rem;
 
         .dots {
             margin-top: 8.2rem;
@@ -68,15 +72,6 @@
                     position: absolute;
                     top: -2rem;
                     left: -2rem;
-                }
-            }
-
-            .arrow {
-                display: block;
-                padding: 1rem;
-
-                &:nth-child(1) {
-                    margin-bottom: 5.8rem;
                 }
             }
         }

@@ -1,0 +1,23 @@
+.arrow {
+    display: none;
+}
+
+@media (min-width: 900px) {
+    .arrow {
+        width: 2rem;
+        height: 2rem;
+        padding: 0;
+        margin-left: 1rem;
+        display: block;
+
+        &:nth-child(1) {
+            margin-bottom: 5.8rem;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .arrow {
+        margin-left: 0;
+    }
+}

@@ -50,18 +50,7 @@
 @media screen and (min-width: 1100px) {
   .category {
     &__description {
-<<<<<<< HEAD
-      &__text {
-        &--left {
-          text-align: left;
-          margin: 0;
-        }
-      }
-
-      .text__md-700 {
-=======
       .text-md {
->>>>>>> master
         font-size: 18px;
         line-height: 27px;
       }
