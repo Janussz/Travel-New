@@ -1,5 +1,5 @@
 .btn__tertiary {
-  @include font(10px, 16px, 600, $col-white, $font-primary);
+  @include font(10px, 16px, $col-white, $font-primary);
   max-width: 18rem;
   margin-top: 4rem;
   padding: 1.5rem 3rem;
@@ -34,7 +34,7 @@
   max-width: 10.2rem;
   padding: 0.9rem 2.1rem;
   background-color: transparent;
-  @include font(17px, 21px, 500, $col-nav-900, $font-quaternary);
+  @include font(17px, 21px, $col-nav-900, $font-quaternary);
   color: $col-nav-900;
   border: 1px solid $col-nav-900;
   border-radius: 5px;
@@ -48,7 +48,7 @@
     max-width: 17rem;
     padding: 18px 26px;
     background-color: $col-yellow-500;
-    @include font(18px, 23px, 500, $col-white);
+    @include font(18px, 23px, $col-white);
     border: none;
   }
 }

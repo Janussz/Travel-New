@@ -18,36 +18,32 @@
   @include font(16px, 27px, $col-text-500, $font-secondary);
 }
 
-// New fonts
-
-// .p_foot_copyright,
-.p_foot_headtext__xs {
+.text__xs {
   @include font(12px, 16px, $col-text-500, $font-secondary);
 }
 
-// .p_foot_list
 .text__sm {
   @include font (14px, 18px, $col-text-500, $font-secondary);
 }
 
-// .card__summary
 .text__md {
   @include font(16px, 20px, $col-text-400, $font-secondary);
 }
 
-// .p-header-nav
 .text__lg {
   @include font(17px, 22px, $col-nav-900, $font-secondary);
 }
 
-// .card__name
 .text__xl {
   @include font(18px, 22px, $col-black, $font-secondary);
 }
 
-// .p-header-description
 .text__xxl {
   @include font(20px, 30px, $col-text-500, $font-secondary);
+}
+
+.text__xxxl {
+  @include font(20px, 43px, $col-text-500, $font-secondary);
 }
 
 .font {
@@ -97,22 +93,33 @@
 
 
 @media screen and (min-width: 400px) {
-  .text__xl-600 {
+  .text__xxxl {
     font-size: 20px;
     line-height: 43px;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .text__xl-600 {
-    font-size: 26px;
+  .text__xxxl {
+    font-size: 24px;
     line-height: 46px;
   }
 }
 
 @media screen and (min-width: 900px) {
-  .text__xl-600 {
+  .text__xxxl {
     font-size: 33px;
     line-height: 54px;
+  }
+
+  .text__md {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .text__sm {
+    font-size: 18px;
+    line-height: 22px;
+
   }
 }
