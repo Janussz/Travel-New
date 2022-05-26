@@ -4,16 +4,14 @@
     max-width: 37rem;
     padding: 2rem;
     border-radius: 2.6rem;
-
+    box-shadow: $bs-bg-box;
     z-index: 1;
+    background-color: $col-white;
 
     &__disactivated {
         display: none;
     }
 
-    &>:nth-child(2) {
-        margin: 2.6rem 0 1.3rem 0;
-    }
 
     &__img {
         align-self: center;
@@ -29,10 +27,6 @@
 
     &__buttons {
         padding: 2.1rem 0 3rem 0;
-
-        .btn__card {
-            padding-right: 1.5rem;
-        }
     }
 
     &__info {
@@ -43,57 +37,38 @@
         .text-md {
             margin-left: 1.5rem;
         }
-
-        .fl-r {
-            height: 2rem;
-            width: 4rem;
-            margin-left: auto;
-            stroke: $col-text-350;
-            stroke-width: 3;
-            fill: none;
-
-            &:active {
-                fill: $col-text-350;
-            }
-        }
     }
 
     &__small {
         @include flex(row, flex-start, center);
-        position: relative;
-        z-index: 2;
+        position: absolute;
+        top: 39rem;
+        left: 4rem;
         width: 26.3rem;
-        margin-bottom: 2rem !important;
+        z-index: 2;
+        margin-bottom: 2rem;
         padding: 2rem;
-        top: -3rem;
         border-radius: 1.8rem;
         box-shadow: $bs-bg-box;
         background-color: $col-white;
-        transition: .2s;
+        transition: .5s;
+
 
         .icon {
             align-self: flex-start;
         }
 
-        .trip__card {
+        .text-xl {
+            padding: 0;
+        }
+
+        &__trip {
             padding-left: 1.2rem;
 
-            .card__name {
-                padding: .6rem 0 0;
-            }
 
-            .trip__completition {
+            .trip__completion {
                 @include flex(row, flex-start, center);
                 padding-bottom: 1rem;
-
-                .text__black {
-                    color: $col-black;
-                }
-
-                .text__blue {
-                    color: $col-text-300;
-                    padding-right: .3rem;
-                }
             }
         }
     }
@@ -102,19 +77,19 @@
         box-shadow: $bs-bg-box-hover;
     }
 
-    &:hover+&__small {
-        opacity: 0;
+    &:hover>&__small {
+        display: none;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
     .card {
         margin-left: 1.8rem;
 
         &__small {
             position: absolute;
-            top: 21.9rem;
-            left: 17.3rem;
+            top: 20rem;
+            left: 17rem;
         }
     }
 }

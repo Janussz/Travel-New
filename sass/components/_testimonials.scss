@@ -1,6 +1,11 @@
 .testimonials {
-    @include flex(column, space-evenly, center);
+    @include flex(column, space-between, center);
+    margin-bottom: 6.6rem;
 
+    &__card {
+        @include flex(column, center, center);
+        text-align: center;
+    }
 
     .dots {
         margin: 5rem 0 5rem 0;
@@ -19,7 +24,7 @@
             padding: 3rem;
             text-align: center;
 
-            .text__md {
+            .text-md {
                 padding: .5rem 0 1.4rem 0;
                 line-height: 2.7rem;
                 // text-align: center;
@@ -38,8 +43,6 @@
         }
 
         .arrow {
-
-
             &__disactivated {
                 fill: grey;
             }
@@ -51,6 +54,18 @@
 
 @media screen and (min-width: 900px) {
     .testimonials {
+        flex-direction: row;
+        margin-bottom: 9.6rem;
+
+        &__card {
+            justify-content: left;
+            align-items: left;
+            text-align: left;
+        }
+
+        .h2 {
+            max-width: 40.9rem;
+        }
 
         .dots {
             margin-top: 8.2rem;
@@ -70,7 +85,7 @@
                 .card__photo {
                     max-width: 6.8rem;
                     position: absolute;
-                    top: -2rem;
+                    top: -3rem;
                     left: -2rem;
                 }
             }

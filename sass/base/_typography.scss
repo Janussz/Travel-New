@@ -77,6 +77,9 @@
     color: $col-text-800;
   }
 
+  &-blue {
+    color: $col-text-300;
+  }
 
   &-faded_blue {
     color: $col-text-500
@@ -100,6 +103,14 @@
 
 }
 
+.text-black {
+  color: $col-black;
+}
+
+.text-blue {
+
+  padding-right: .3rem;
+}
 
 @media screen and (min-width: 400px) {
   .text__xl-600 {

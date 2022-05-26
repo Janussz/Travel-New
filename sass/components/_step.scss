@@ -1,0 +1,25 @@
+.step {
+    @include flex(row, left, center);
+    margin: 2.4rem 0;
+
+    &__icon {
+        max-width: 48px;
+        margin-right: 2rem;
+    }
+
+    &__content {
+        @include flex(column, center, left);
+        max-width: 32.8rem;
+
+        .h5 {
+            margin-bottom: .4rem;
+            line-height: 124.5%;
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .step {
+        align-self: left;
+    }
+}

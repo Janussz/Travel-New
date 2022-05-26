@@ -22,3 +22,20 @@
         @include decore(url(./../img/header/underscore.svg), contain, no-repeat);
     }
 }
+
+.glow {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 35.4rem;
+        height: 36.7rem;
+        z-index: -99;
+        background: #59B1E6;
+        opacity: 0.4;
+        filter: blur(150px);
+        top: -19px;
+        right: -44px;
+    }
+}
