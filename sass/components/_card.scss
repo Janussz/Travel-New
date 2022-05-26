@@ -4,9 +4,10 @@
     max-width: 37rem;
     padding: 2rem;
     border-radius: 2.6rem;
-    box-shadow: $bs-bg-box;
+    box-shadow: $bs-card;
     z-index: 1;
     background-color: $col-white;
+    transition: box-shadow .5s, transform .5s;
 
     &__disactivated {
         display: none;
@@ -51,7 +52,7 @@
         border-radius: 1.8rem;
         box-shadow: $bs-bg-box;
         background-color: $col-white;
-        transition: .5s;
+        transition: opacity .5s, transform .5s;
 
 
         .icon {
@@ -74,10 +75,12 @@
     }
 
     &:hover {
-        box-shadow: $bs-bg-box-hover;
+        box-shadow: $bs-card-hover;
+        transform: translateY(-20px);
     }
 
     &:hover>&__small {
+        opacity: 0;
         display: none;
     }
 }
@@ -90,6 +93,53 @@
             position: absolute;
             top: 20rem;
             left: 17rem;
+        }
+    }
+
+    .destination {
+        max-width: 31.4rem;
+        border-radius: 24px;
+        background-color: $col-white;
+        box-shadow: $bs-card;
+        transition: box-shadow .5s, transform .5s;
+
+        &:hover {
+            box-shadow: $bs-card-hover;
+            transform: translateY(-10px);
+        }
+
+        &__img {
+            max-height: 32.7rem;
+            overflow: hidden;
+        }
+
+        &__text {
+            @include flex(column, space-between, space-between);
+            @include gap(2rem);
+            padding: 2.7rem 2rem 4rem;
+            @include font(16px, 20px, 500, $col-text-500, $font-secondary);
+
+
+            &__heading {
+                @include flex(row, space-between, space-between);
+                @include font(18px, 22px, 500, $col-text-500, $font-secondary);
+            }
+        }
+    }
+
+    .brand {
+        @include flex;
+        padding: 0 2rem;
+        height: 8.6rem;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: box-shadow .5s, transform .5s, filter .5s;
+        filter: grayscale(1);
+
+        &:hover {
+            box-shadow: $bs-card-brand;
+            transform: translateY(-5px);
+            filter: grayscale(0);
         }
     }
 }

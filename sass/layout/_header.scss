@@ -21,6 +21,7 @@
 
             .text-xxl {
                 font-size: 16px;
+                font-weight: 700;
                 line-height: 25px;
                 margin-bottom: 1rem;
                 text-transform: uppercase;
@@ -73,7 +74,7 @@
             }
 
             &__item {
-                @include font(17px, 22px, 500, $col-nav-900, $font-quaternary);
+                @include font(17px, 22px, 400, $col-nav-900, $font-quaternary);
                 cursor: pointer;
             }
         }
@@ -113,7 +114,7 @@
 
             &__list {
                 max-width: 46rem;
-                @include font(17px, 21px, 500, $col-nav-900);
+                @include font(17px, 21px, 400, $col-nav-900);
                 @include flex(row, space-between);
                 flex-grow: 1;
             }

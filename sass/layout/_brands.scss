@@ -1,0 +1,13 @@
+.brands {
+    @include flex(column);
+    padding-top: 12rem;
+    margin-bottom: 14rem;
+
+    &__list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        justify-items: center;
+    }
+}
