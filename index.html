@@ -26,7 +26,15 @@
       <div class="header__nav__login">
         <button class="btn btn--no-border">Login</button>
         <button class="btn">Sign up</button>
-        <button class="btn btn--no-border">EN &#8595;</button>
+        <div class="dropdown-wrap">
+          <button class="btn btn--no-border btn--padding-right btn--static btn--no-shadow dropdown--hover">EN</button>
+          <ul class="dropdown">
+            <li class="dropdown__element">PL</li>
+            <li class="dropdown__element">ES</li>
+            <li class="dropdown__element">PT</li>
+          </ul>
+          <span class="arrow-down arrow-down--button">&#8595;</span>
+        </div>
       </div>
       <svg class="menu">
         <use xlink:href="./img/header/symbol-defs.svg#menu"></use>
@@ -291,6 +299,8 @@
     </main>
     <script src="./index.js"></script>
     <script src="./scroll.js"></script>
+    <script src="./changeLang.js"></script>
+
 </body>
 
 </html>
