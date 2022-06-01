@@ -309,7 +309,6 @@ a {
   line-height: 21px;
   font-weight: 400;
   color: #212832;
-  color: #212832;
   border: 1px solid #212832;
   border-radius: 5px;
   cursor: pointer;
@@ -323,6 +322,12 @@ a {
   border: none;
   box-shadow: none;
 }
+.btn--no-shadow:hover {
+  box-shadow: none;
+}
+.btn--padding-right {
+  padding-right: 3rem;
+}
 .btn--yellow {
   max-width: 17rem;
   padding: 18px 26px;
@@ -333,6 +338,9 @@ a {
   color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border: none;
+}
+.btn--static {
+  max-width: 69px;
 }
 
 .btn-play {
@@ -433,6 +441,17 @@ a {
   top: 2px;
   margin-right: 1rem;
   background-image: url("./../../img/destination/Vector.svg");
+}
+
+.arrow-down {
+  position: absolute;
+  right: 30px;
+  top: 27px;
+  font-family: "GoogleSans";
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #212832;
 }
 
 .input {
@@ -698,6 +717,40 @@ a {
   top: 8.2rem;
   opacity: 100%;
   border: 2px solid #8A79DF;
+}
+
+.dropdown-wrap .arrow-down {
+  transition: all 0.2s;
+}
+.dropdown-wrap:hover .arrow-down {
+  transform: rotate(-180deg);
+  top: 32px;
+}
+.dropdown-wrap .dropdown {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 27.5px;
+}
+.dropdown-wrap .dropdown:hover, .dropdown-wrap .dropdown--hover:hover + .dropdown {
+  display: block;
+}
+.dropdown-wrap .dropdown__element {
+  max-width: 60px;
+  padding: 0.9rem 2.1rem;
+  background-color: transparent;
+  font-family: "GoogleSans";
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #212832;
+  color: #212832;
+  cursor: pointer;
+  transition: border-radius 0.2s;
+  border-bottom: 1px solid #212832;
+}
+.dropdown-wrap .dropdown__element:hover {
+  border-radius: 5px;
 }
 
 .header {
