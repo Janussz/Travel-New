@@ -313,10 +313,9 @@ a {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .btn:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .btn--no-border {
   border: none;
@@ -325,8 +324,9 @@ a {
 .btn--no-shadow:hover {
   box-shadow: none;
 }
-.btn--padding-right {
-  padding-right: 3rem;
+.btn--padding {
+  padding-left: 1.8rem;
+  padding-right: 2.9rem;
 }
 .btn--yellow {
   max-width: 17rem;
@@ -336,11 +336,10 @@ a {
   line-height: 23px;
   font-weight: 400;
   color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border: none;
 }
 .btn--static {
-  max-width: 69px;
+  max-width: 65px;
 }
 
 .btn-play {
@@ -350,6 +349,9 @@ a {
   border-radius: 26px;
   border: none;
   background-color: #DF6951;
+  transition: all 0.3s;
+}
+.btn-play:hover {
   box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
 }
 .btn-play::after {
@@ -722,7 +724,7 @@ a {
 .dropdown-wrap .arrow-down {
   transition: all 0.2s;
 }
-.dropdown-wrap:hover .arrow-down {
+.dropdown-wrap .arrow-rotate {
   transform: rotate(-180deg);
   top: 32px;
 }
@@ -730,14 +732,14 @@ a {
   display: none;
   position: absolute;
   top: 60px;
-  right: 27.5px;
+  right: 20px;
 }
-.dropdown-wrap .dropdown:hover, .dropdown-wrap .dropdown--hover:hover + .dropdown {
+.dropdown-wrap .dropdown--active {
   display: block;
 }
 .dropdown-wrap .dropdown__element {
-  max-width: 60px;
-  padding: 0.9rem 2.1rem;
+  max-width: 65px;
+  padding: 0.9rem 2.9rem 0.9rem 1.8rem;
   background-color: transparent;
   font-family: "GoogleSans";
   font-size: 17px;
@@ -746,10 +748,10 @@ a {
   color: #212832;
   color: #212832;
   cursor: pointer;
-  transition: border-radius 0.2s;
-  border-bottom: 1px solid #212832;
+  transition: all 0.3s;
 }
 .dropdown-wrap .dropdown__element:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border-radius: 5px;
 }
 
@@ -887,6 +889,15 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    column-gap: 1rem;
+  }
+  @supports not (column-gap: 1rem) {
+    .header__nav__login > * {
+      margin-right: 1rem;
+    }
+    .header__nav__login > *:last-child {
+      margin-right: 0;
+    }
   }
   .header__nav .menu {
     display: none;

@@ -37,11 +37,11 @@
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
-    0 1px 2px rgba(0, 0, 0, 0.24);
+
 
   &:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+      0 1px 2px rgba(0, 0, 0, 0.24);
   }
 
 
@@ -56,8 +56,9 @@
     }
   }
 
-  &--padding-right {
-    padding-right: 3rem;
+  &--padding {
+    padding-left: 1.8rem;
+    padding-right: 2.9rem;
   }
 
   &--yellow {
@@ -65,13 +66,11 @@
     padding: 18px 26px;
     background-color: $col-yellow-500;
     @include font(18px, 23px, 400, $col-white);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
-      0 1px 2px rgba(0, 0, 0, 0.24);
     border: none;
   }
 
   &--static {
-    max-width: 69px;
+    max-width: 65px;
   }
 
 
@@ -84,7 +83,12 @@
   border-radius: 26px;
   border: none;
   background-color: $col-orange-500;
-  box-shadow: $bs-orange-btn;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: $bs-orange-btn;
+  }
+
 
   &::after {
     content: '';
