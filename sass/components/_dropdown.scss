@@ -1,37 +1,37 @@
 .dropdown-wrap {
+
     .arrow-down {
         transition: all 0.2s;
     }
 
-    &:hover {
-        .arrow-down {
-            transform: rotate(-180deg);
-            top: 32px;
-        }
+    .arrow-rotate {
+        transform: rotate(-180deg);
+        top: 32px;
     }
 
     .dropdown {
         display: none;
         position: absolute;
         top: 60px;
-        right: 27.5px;
+        right: 20px;
 
-        &:hover,
-        &--hover:hover+.dropdown {
+        &--active {
             display: block;
+
         }
 
         &__element {
-            max-width: 60px;
-            padding: 0.9rem 2.1rem;
+            max-width: 65px;
+            padding: 0.9rem 2.9rem 0.9rem 1.8rem;
             background-color: transparent;
             @include font(17px, 21px, 400, $col-nav-900, $font-quaternary);
             color: $col-nav-900;
             cursor: pointer;
-            transition: border-radius 0.2s;
-            border-bottom: 1px solid $col-nav-900;
+            transition: all 0.3s;
 
             &:hover {
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+                    0 1px 2px rgba(0, 0, 0, 0.24);
                 border-radius: 5px;
             }
         }
