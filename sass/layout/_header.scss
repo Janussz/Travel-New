@@ -121,6 +121,7 @@
 
             &__login {
                 @include flex;
+                @include gap(false, 1rem);
             }
 
             .menu {

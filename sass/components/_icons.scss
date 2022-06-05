@@ -43,3 +43,10 @@
     background-image: url("./../../img/destination/Vector.svg");
   }
 }
+
+.arrow-down {
+  position: absolute;
+  right: 30px;
+  top: 27px;
+  @include font(17px, 21px, 400, $col-nav-900, $font-quaternary);
+}
