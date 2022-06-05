@@ -22,12 +22,21 @@
   @include font(12px, 16px, 500, $col-text-500, $font-secondary);
 }
 
-.text-sm {
+.text-sm,
+.text-sm-2 {
   @include font (14px, 18px, 500, $col-text-500, $font-secondary);
 }
 
 .text-md {
   @include font(16px, 20px, 700, $col-text-400, $font-secondary);
+}
+
+.text-md-2 {
+  @include font(16px, 20px, 500, $col-text-400, $font-secondary);
+}
+
+.text-md-3 {
+  @include font(16px, 32px, 500, $col-text-400, $font-secondary);
 }
 
 .text-lg {
@@ -73,7 +82,19 @@
     color: $col-black;
   }
 
-  &-dark-blue {
+  &-light_dark_blue {
+    color: $col-text-800;
+  }
+
+  &-blue {
+    color: $col-text-300;
+  }
+
+  &-faded_blue {
+    color: $col-text-500
+  }
+
+  &-dark_blue {
     color: $col-text-900;
   }
 
@@ -90,6 +111,14 @@
   }
 }
 
+.text-black {
+  color: $col-black;
+}
+
+.text-blue {
+
+  padding-right: .3rem;
+}
 
 @media screen and (min-width: 400px) {
   .text-xxxl {
@@ -119,5 +148,10 @@
   .text-sm {
     font-size: 18px;
     line-height: 22px;
+
+    .text-sm-2 {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 }

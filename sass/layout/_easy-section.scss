@@ -1,0 +1,20 @@
+.easy-section {
+    @include flex(column, space-between, center);
+    margin-bottom: 18rem;
+
+    .text-xl {
+        margin-bottom: 1.5rem;
+    }
+
+    &__steps {
+        align-self: flex-start;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .easy-section {
+        flex-direction: row;
+        padding-bottom: 18.5rem;
+    }
+}

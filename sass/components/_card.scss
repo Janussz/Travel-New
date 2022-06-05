@@ -1,109 +1,140 @@
 .card {
+    @include flex(column, left, left);
     position: relative;
-    max-width: 40rem;
+    max-width: 37rem;
     padding: 2rem;
-    margin-bottom: 35rem;
+    border-radius: 2.6rem;
+    box-shadow: $bs-card;
+    z-index: 1;
+    background-color: $col-white;
+    transition: box-shadow .5s, transform .5s;
+
+    &__img {
+        align-self: center;
+    }
 
     &__name {
         padding: 2.6rem 0 1.3rem 0;
     }
 
+    .text-md {
+        line-height: 3.2rem;
+    }
+
     &__buttons {
         padding: 2.1rem 0 3rem 0;
-
-        .btn__card {
-            padding-right: 1.5rem;
-        }
     }
 
     &__info {
         @include flex(row, flex-start, center);
-        padding-bottom: 3rem;
+        padding-bottom: 1rem;
         max-width: 100%;
 
-        .card__summary {
-            padding-left: 1.5rem;
+        .text-md {
+            margin-left: 1.5rem;
         }
     }
 
     &__small {
-        @include flex(row, flex-start, flex-start);
+        @include flex(row, flex-start, center);
         position: absolute;
-        top: 0;
-        left: 0;
-        max-width: 26.3rem;
-        border-radius: 1.8rem;
-        filter: box-shadow(0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+        top: 39rem;
+        left: 4rem;
+        width: 26.3rem;
+        z-index: 2;
+        margin-bottom: 2rem;
         padding: 2rem;
-        z-index: 1;
+        border-radius: 1.8rem;
+        box-shadow: $bs-bg-box;
         background-color: $col-white;
+        transition: opacity .5s, transform .5s;
 
-        .trip__card {
+
+        .icon {
+            align-self: flex-start;
+        }
+
+        .text-xl {
+            padding: 0;
+        }
+
+        &__trip {
             padding-left: 1.2rem;
 
-            .card__name {
-                padding: .6rem 0 1.4rem 0;
-            }
 
-            .trip__completition {
+            .trip__completion {
                 @include flex(row, flex-start, center);
-
-                .text__black {
-                    color: $col-black;
-                }
-
-                .text__blue {
-                    color: $col-text-300;
-                    padding-right: .3rem;
-                }
+                padding-bottom: 1rem;
             }
         }
     }
-}
-
-.destination {
-    max-width: 31.4rem;
-    border-radius: 24px;
-    background-color: $col-white;
-    box-shadow: $bs-card;
-    transition: box-shadow .5s, transform .5s;
 
     &:hover {
         box-shadow: $bs-card-hover;
-        transform: translateY(-10px);
+        transform: translateY(-20px);
     }
 
-    &__img {
-        max-height: 32.7rem;
-        overflow: hidden;
-    }
-
-    &__text {
-        @include flex(column, space-between, space-between);
-        @include gap(2rem);
-        padding: 2.7rem 2rem 4rem;
-        @include font(16px, 20px, 500, $col-text-500, $font-secondary);
-
-
-        &__heading {
-            @include flex(row, space-between, space-between);
-            @include font(18px, 22px, 500, $col-text-500, $font-secondary);
-        }
+    &:hover>&__small {
+        opacity: 0;
+        display: none;
     }
 }
 
-.brand {
-    @include flex;
-    padding: 0 2rem;
-    height: 8.6rem;
-    overflow: hidden;
-    border-radius: 10px;
-    transition: box-shadow .5s, transform .5s, filter .5s;
-    filter: grayscale(1);
+@media (min-width: 1400px) {
+    .card {
+        margin-left: 1.8rem;
 
-    &:hover {
-        box-shadow: $bs-card-brand;
-        transform: translateY(-5px);
-        filter: grayscale(0);
+        &__small {
+            position: absolute;
+            top: 20rem;
+            left: 17rem;
+        }
+    }
+
+    .destination {
+        max-width: 31.4rem;
+        border-radius: 24px;
+        background-color: $col-white;
+        box-shadow: $bs-card;
+        transition: box-shadow .5s, transform .5s;
+
+        &:hover {
+            box-shadow: $bs-card-hover;
+            transform: translateY(-10px);
+        }
+
+        &__img {
+            max-height: 32.7rem;
+            overflow: hidden;
+        }
+
+        &__text {
+            @include flex(column, space-between, space-between);
+            @include gap(2rem);
+            padding: 2.7rem 2rem 4rem;
+            @include font(16px, 20px, 500, $col-text-500, $font-secondary);
+
+
+            &__heading {
+                @include flex(row, space-between, space-between);
+                @include font(18px, 22px, 500, $col-text-500, $font-secondary);
+            }
+        }
+    }
+
+    .brand {
+        @include flex;
+        padding: 0 2rem;
+        height: 8.6rem;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: box-shadow .5s, transform .5s, filter .5s;
+        filter: grayscale(1);
+
+        &:hover {
+            box-shadow: $bs-card-brand;
+            transform: translateY(-5px);
+            filter: grayscale(0);
+        }
     }
 }

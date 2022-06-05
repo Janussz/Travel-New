@@ -137,71 +137,90 @@
         </ul>
       </div>
     </section>
-    <section class="container">
-      <h5 class="category__description__title ">EASY AND FAST</h5>
-      <h2 class="category__description__header">Book your next trip </br>
-        in 3 easy steps</h2>
-      <div class="container__steps">
-        <div class="step">
-          <div class="step__icon">
-            <img class="icon" src="./img/trips/dest.svg" alt="" srcset="">
+    <section class="easy-section container">
+      <div>
+        <h3 class="text-xl color-faded_blue">Easy and Fast</h3>
+        <h2 class="h2">Book your next trip </br>
+          in 3 easy steps</h2>
+        <div class="easy-section__steps">
+          <div class="step">
+            <img class="step__icon" src="./img/trips/dest.svg">
+            <div class="step__content">
+              <span class="h5 font-bold color_faded_blue">Choose Destination</span>
+              <span class="h5 font-normal color_faded_blue ">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Urna, tortor tempus. </span>
+            </div>
           </div>
-          <div class="step__content">
-            <span class="cn__nm">Choose Destination</span>
-            <span class="cn__desc">Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Urna, tortor tempus. </span>
+          <div class="step">
+            <img class="step__icon" src="./img/trips/pay.svg">
+            <div class="step__content">
+              <span class="h5 font-bold color_faded_blue">Make Payment</span>
+              <span class="h5 font-normal color_faded_blue">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Urna, tortor tempus. </span>
+            </div>
           </div>
-        </div>
-        <div class="step">
-          <div class="step__icon">
-            <img class="icon" src="./img/trips/pay.svg" alt="" srcset="">
-          </div>
-          <div class="step__content">
-            <span class="cn__nm">Make Payment</span>
-            <span class="cn__desc">Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Urna, tortor tempus. </span>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step__icon">
-            <img class="icon" src="./img/trips/reach.svg" alt="" srcset="">
-          </div>
-          <div class="step__content">
-            <span class="cn__nm">Reach Airport on Selected Date</span>
-            <span class="cn__desc">Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Urna, tortor tempus. </span>
+          <div class="step">
+            <img class="step__icon" src="./img/trips/reach.svg">
+            <div class="step__content">
+              <span class="h5 font-bold color_faded_blue">Reach Airport on Selected Date</span>
+              <span class="h5 font-normal color_faded_blue">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Urna, tortor tempus. </span>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box">
-        <div class="card card__glow card__front">
-          <img src="./img/trips/Greece.svg" alt="" srcset="">
-          <p class="card__name">Trip To Greece</p>
-          <p class="card__summary">14-29 June | by Robin Johnson</p>
+      <div class="easy-section__cards glow">
+        <div class="card">
+          <img class="card__img" src="./img/trips/Greece.svg">
+          <p class="text-xl font-semi_bold margin-200 ">Trip To Greece</p>
+          <p class="text-md-2">14-29 June | by Robin Johnson</p>
           <div class="card__buttons">
-            <img class="btn__card" src="./img/trips/LEAF.svg" alt="" srcset="">
-            <img class="btn__card" src="./img/trips//map icon.svg" alt="" srcset="">
-            <img class="btn__card" src="./img/trips//send.svg" alt="" srcset="">
+            <img class="padding-r-100" src="./img/trips/LEAF.svg">
+            <img class="padding-r-100" src="./img/trips//map icon.svg">
+            <img class="padding-r-100" src="./img/trips//send.svg">
           </div>
           <div class="card__info">
-            <img src="./img/trips/buildings.svg" alt="" srcset="">
-            <p class="card__summary">24 people going</p>
-            <img class="fl-r" src="./img/trips/heart (6) 1.svg" alt="" srcset="">
+            <img src="./img/trips/buildings.svg">
+            <p class="text-md-2">24 people going</p>
+            <svg class="heart">
+              <use xlink:href="./../img/subscribe/symbol-defs.svg#icon-heart"></use>
+            </svg>
+          </div>
+          <div class="card__small">
+            <img class="icon" src="./img/trips/Mask Group.svg">
+            <div class="card__small__trip ">
+              <p class="text-sm-2 font-semi_bold color-faded_blue">Ongoing</p>
+              <p class="text-xl font-semi_bold margin-100">Trip to Rome</p>
+              <span class="trip__completion">
+                <p class="text-sm-2 font_semi-bold padding-r-50 color-blue">40%</p>
+                <p class="text-sm-2 font_semi-bold color-black">completed</p>
+              </span>
+              <hr class="line">
+              <hr class="line line--blue">
+            </div>
           </div>
         </div>
-        <div class="card card__small card__glow">
-          <img class="icon" src="./img/trips/Mask Group.svg" alt="" srcset="">
-          <div class="trip__card ">
-            <p class="trip__title">Ongoing</p>
-            <p class="card__name">Trip to Rome</p>
-            <span class="trip__completition">
-              <p class=" trip__title text__blue">40%</p>
-              <p class=" trip__title text__black">completed</p>
-            </span>
-            <hr class="line">
-            <hr class="line line__blue">
-          </div>
+      </div>
+    </section>
+    <section class="testimonials container">
+      <div class="testimonials__card">
+        <h5 class="text-xl font-semi_bold color-faded_blue h3">TESTIMONIALS</h5>
+        <h2 class="h2">What People Say About Us.</h2>
+        <div class="dots">
+          <span class="dot dot--checked"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
         </div>
+      </div>
+      <div id="cardContent" class="box">
+      </div>
+      <div id="arrows" class="box">
+        <svg id="arrowUp" class="arrow arrow__up">
+          <use xlink:href="./../img/subscribe/symbol-defs.svg#icon-arrow-up2"></use>
+        </svg>
+        <svg id="arrowDown" class="arrow arrow__down ">
+          <use xlink:href="./../img/subscribe/symbol-defs.svg#icon-arrow-down2"></use>
+        </svg>
       </div>
     </section>
     <section class="brands container">

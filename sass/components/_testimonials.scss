@@ -1,0 +1,90 @@
+.testimonials {
+    @include flex(column, space-between, center);
+    margin-bottom: 6.6rem;
+
+    &__card {
+        @include flex(column, center, center);
+        text-align: center;
+    }
+
+    .dots {
+        margin: 5rem 0 5rem 0;
+    }
+
+    .category__description__text {
+        max-width: 40.2rem;
+    }
+
+    .box {
+        &__title {
+            max-width: 40.9rem;
+        }
+
+        .card {
+            padding: 3rem;
+            text-align: center;
+
+
+            &__photo {
+                max-width: 6.8rem;
+                position: absolute;
+                top: -3rem;
+                left: -2rem;
+            }
+
+            &__name {
+                padding: 0 0 .5rem 0;
+            }
+
+        }
+
+        .arrow {
+            &__disactivated {
+                fill: grey;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 900px) {
+    .testimonials {
+        flex-direction: row;
+        margin-bottom: 9.6rem;
+
+        &__card {
+            justify-content: left;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .h2 {
+            max-width: 40.9rem;
+        }
+
+        .dots {
+            margin-top: 8.2rem;
+        }
+
+        .box {
+            .card {
+                text-align: left;
+                max-width: 50.8rem;
+                padding: 2.8rem 6.8rem 3.4rem 3.4rem;
+
+                .text__md {
+                    padding: .5rem 0 1.4rem 0;
+                    line-height: 3.2rem;
+                }
+
+                &__photo {
+                    max-width: 6.8rem;
+                    position: absolute;
+                    top: -3rem;
+                    left: -2rem;
+                }
+            }
+        }
+    }
+}

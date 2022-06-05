@@ -1,0 +1,21 @@
+.dots {
+    .dot {
+        height: 12px;
+        width: 12px;
+        background-color: $col-background;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 2.4rem;
+
+        &--checked {
+            background-color: $col-text-600;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .dots {
+        align-self: start;
+    }
+}

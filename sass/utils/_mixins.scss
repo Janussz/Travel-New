@@ -12,8 +12,8 @@
 
     font-size: $size;
     line-height: $line;
-    font-weight: $weight;
     color: $color;
+    font-weight: $weight;
 }
 
 @mixin decore($url, $size: false, $repeat: false, $position: false) {
