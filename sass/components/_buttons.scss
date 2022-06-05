@@ -33,21 +33,32 @@
   padding: 0.9rem 2.1rem;
   background-color: transparent;
   @include font(17px, 21px, 400, $col-nav-900, $font-quaternary);
-  color: $col-nav-900;
   border: 1px solid $col-nav-900;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
-    0 1px 2px rgba(0, 0, 0, 0.24);
+
 
   &:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+      0 1px 2px rgba(0, 0, 0, 0.24);
   }
+
 
   &--no-border {
     border: none;
     box-shadow: none;
+  }
+
+  &--no-shadow {
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  &--padding {
+    padding-left: 1.8rem;
+    padding-right: 2.9rem;
   }
 
   &--yellow {
@@ -55,10 +66,14 @@
     padding: 18px 26px;
     background-color: $col-yellow-500;
     @include font(18px, 23px, 400, $col-white);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
-      0 1px 2px rgba(0, 0, 0, 0.24);
     border: none;
   }
+
+  &--static {
+    max-width: 65px;
+  }
+
+
 }
 
 .btn-play {
@@ -68,7 +83,12 @@
   border-radius: 26px;
   border: none;
   background-color: $col-orange-500;
-  box-shadow: $bs-orange-btn;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: $bs-orange-btn;
+  }
+
 
   &::after {
     content: '';

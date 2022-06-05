@@ -13,7 +13,7 @@
   <header class="header container">
     <nav class="header__nav">
       <figure class="header__nav__logo">
-        <a href="">
+        <a href="https://janussz.github.io/Travel-New/">
           <img src="./img/header/Logo.svg" alt="Logo img" class="logo">
         </a>
       </figure>
@@ -26,7 +26,15 @@
       <div class="header__nav__login">
         <button class="btn btn--no-border">Login</button>
         <button class="btn">Sign up</button>
-        <button class="btn btn--no-border">EN &#8595;</button>
+        <div class="dropdown-wrap">
+          <button class="btn btn--no-border btn--padding btn--static dropdown--btn">EN</button>
+          <ul class="dropdown">
+            <li class="dropdown__element">PL</li>
+            <li class="dropdown__element">ES</li>
+            <li class="dropdown__element">PT</li>
+          </ul>
+          <span class="arrow-down">&#8595;</span>
+        </div>
       </div>
       <svg class="menu">
         <use xlink:href="./img/header/symbol-defs.svg#menu"></use>
@@ -40,7 +48,7 @@
           Preferred to
           sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
         <div class="header__buttons">
-          <button class="btn btn--yellow">Find out more</button>
+          <button data="scroll" class="btn btn--yellow">Find out more</button>
           <div class="header__buttons__wrap">
             <button class="btn-play"></button><a href="" class="text-lg color-grey">Play Demo</a>
           </div>
@@ -302,7 +310,10 @@
     </section>
     </main>
     <script src="./index.js"></script>
+    <script src="./scroll.js"></script>
+    <script src="./changeLang.js"></script>
     <script src="./newsletter.js"></script>
+
 
 </body>
 
