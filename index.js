@@ -1,8 +1,8 @@
-var card = document.getElementById("cardContent");
-var arrowUp = document.getElementById("arrowUp");
-var arrowDown = document.getElementById("arrowDown");
-var description = [{
-
+const card = document.getElementById("cardContent");
+const arrowUp = document.getElementById("arrowUp");
+const arrowDown = document.getElementById("arrowDown");
+const allDots = document.querySelectorAll('span.dot');
+const description = [{
     text: `<div class="card">
     <img class="card__photo" src="./img/testimonial/Mike-img.svg">
     <p class="text-md-3 font-medium">“On the Windows talking painted
@@ -29,45 +29,48 @@ var description = [{
   }
 ]
 
-function checkingArrow() {
-  if (i < 0) {
-    i = description.length - 1;
-    arrowDown.disabled = true;
+let current = 0;
+
+function checkingArrow(current) {
+  if (current < 0) {
+    current = description.length - 1;
   }
-  if (i >= description.length) {
-    i = 0;
-    arrowUp.disabled = true;
+  if (current >= description.length) {
+    current = 0;
   }
+  return current;
 }
 
-let i = 0;
-
 function removingColor() {
-  document.querySelectorAll('span.dot').forEach(e => {
+  allDots.forEach(e => {
     e.classList.remove('dot--checked');
   })
 }
 
-Array.from(document.querySelectorAll('span.dot')).forEach((el, current) => {
-  el.preventDefault;
+function changingTextField(current) {
+  removingColor();
+  checkingArrow(current);
+  Array.from(allDots)[current].classList.add('dot--checked');
+  card.innerHTML = `${description[current].text}`;
+}
+
+Array.from(allDots).forEach((el, current) => {
   el.addEventListener("click", e => {
-    removingColor();
-    el.classList.add('dot--checked');
-    card.innerHTML = `${description[current].text}`;
+    changingTextField(current);
+    return current;
   })
 })
-card.innerHTML = `${description[i].text}`;
+
+card.innerHTML = `${description[current].text}`;
 
 arrowUp.addEventListener("click", e => {
   e.preventDefault;
-  i--;
-  checkingArrow();
-  card.innerHTML = `${description[i].text}`;
+  current--;
+  changingTextField(current);
 });
 
 arrowDown.addEventListener("click", e => {
   e.preventDefault;
-  i++;
-  checkingArrow();
-  card.innerHTML = `${description[i].text}`;
+  current++;
+  changingTextField(current);
 });

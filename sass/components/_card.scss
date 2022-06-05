@@ -9,11 +9,6 @@
     background-color: $col-white;
     transition: box-shadow .5s, transform .5s;
 
-    &__disactivated {
-        display: none;
-    }
-
-
     &__img {
         align-self: center;
     }
