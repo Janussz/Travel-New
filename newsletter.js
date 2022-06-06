@@ -1,34 +1,40 @@
 const usersInDatabase = [];
-const modal1 = document.querySelector('.modal1');
-const modal2 = document.querySelector('.modal2');
+const modal = document.querySelector('.modal');
 const showModal = document.querySelector('.show_modal');
 const closeModal = document.querySelector('.close_modal');
+const textModal = document.querySelector('.modal_text');
 
 showModal.addEventListener("click", function (e) {
   e.preventDefault();
   const inputEmail = document.querySelector('.input__contact').value;
   if (inputEmail) {
     const checkEmail = function (el) {
-
+      modal.classList.remove("hidden");
       if (usersInDatabase.includes(el)) {
-        modal2.classList.remove("hidden");
 
-        // alert("This email is already subcribed. Check your mailbox");
+        textModal.innerHTML = /*HTML*/ `
+        <h3>You are subscribed already</h3>
+        <p>Check your mailbox for massage</p>
+        `;
+
       } else {
-        usersInDatabase.push(el);
-        modal1.classList.remove("hidden");
-        // alert(`Thank you for subscribing to newsletter with your email: ${el}!`)
+        usersInDatabase.unshift(el);
+        textModal.innerHTML = /*HTML*/ `
+        <h3>Thank You for subscribing to newsletter</h3>
+        <p>Your email ${el} </p> 
+        `;
       }
     }
     checkEmail(inputEmail);
     console.log(usersInDatabase);
     document.querySelector('.input__contact').value = "";
+
   } else {
     return null
   }
 });
 
 closeModal.addEventListener("click", function () {
-  modal1.classList.add("hidden");
-  modal2.classList.add("hidden");
+  modal.classList.add("hidden");
+
 });

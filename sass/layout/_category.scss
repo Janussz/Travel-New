@@ -24,9 +24,15 @@
   }
 
   &__services {
+    @include flex(row, center);
+    margin: auto;
+
     &__list {
-      z-index: 1;
       @include flex(column, center, center);
+      max-width: 80rem;
+      @include gap(false, 7rem);
+      z-index: 1;
+      flex-wrap: wrap;
 
       &__item {
         position: relative;
@@ -44,7 +50,7 @@
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1000px) {
   .category {
     &__description {
       .text-md {
@@ -66,6 +72,16 @@
     &__services {
       &__list {
         @include flex(row, space-between, center);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .category {
+    &__services {
+      &__list {
+        max-width: fit-content;
       }
     }
   }
